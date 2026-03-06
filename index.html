@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELAF - Shariah Advisory</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header__inner">
+      <div class="logo">
+        <span class="logo__name">ELAF</span>
+        <span class="logo__sub">Shariah Advisory</span>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav__link nav__link--active">Home</a>
+        <a href="#about" class="nav__link">About Us</a>
+        <a href="#services" class="nav__link">Advisory Services</a>
+        <a href="#case-studies" class="nav__link">Case Studies</a>
+        <a href="#resources" class="nav__link">Knowledge &amp; Resources</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn--primary">Book Executive Consultation</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero__bg-layers">
+      <img src="images/aurora-bg-1.png" alt="" class="hero__aurora hero__aurora--1">
+      <img src="images/aurora-bg-2.png" alt="" class="hero__aurora hero__aurora--2">
+      <img src="images/hero-grid-bg.png" alt="" class="hero__grid-img">
+      <div class="hero__grid-lines">
+        <div class="hero__cell-glow" style="left:192px;top:192px"></div>
+        <div class="hero__cell-glow" style="left:672px;top:96px"></div>
+        <div class="hero__cell-glow" style="left:480px;top:384px"></div>
+        <div class="hero__cell-glow" style="left:864px;top:288px"></div>
+        <div class="hero__cell-glow" style="left:96px;top:480px"></div>
+        <div class="hero__cell-glow" style="left:576px;top:576px"></div>
+        <div class="hero__cell-glow" style="left:768px;top:480px"></div>
+        <div class="hero__cell-glow" style="left:288px;top:672px"></div>
+        <div class="hero__cell-glow" style="left:960px;top:576px"></div>
+        <div class="hero__cell-glow" style="left:384px;top:96px"></div>
+      </div>
+      <div class="hero__gradient-overlay"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 6.5L4.5 10L11 2" stroke="#C9A84C" stroke-width="1.5"/></svg>
+        <span>AAOIFI Certified · Globally Recognized</span>
+      </div>
+
+      <h1 class="hero__title">
+        Global Shariah Advisory &amp; <span class="text-accent">Islamic Financial</span> Architecture.
+      </h1>
+
+      <p class="hero__desc">
+        We help global FinTechs, Banks, Startups, and Venture funds engineer Shariah-compliant business models and ethical financial products. We do not provide abstract theoretical guidelines—we deliver executable solutions that are highly practical, commercially viable, and regulator-ready.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#services" class="btn btn--primary btn--lg">
+          Explore Advisory Services
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3.33L12.67 8L8 12.67" stroke="#1A1A1A" stroke-width="1.33"/></svg>
+        </a>
+        <a href="#case-studies" class="btn btn--outline-white btn--lg">View Global Case Studies</a>
+        <a href="#" class="btn btn--outline-gold btn--lg">Ask the Advisor</a>
+      </div>
+
+      <div class="hero__credentials">
+        <div class="hero__credential">
+          <img src="images/check-circle-cred.png" alt="" class="hero__credential-icon">
+          <span>AAOIFI Certified Leadership</span>
+          <span class="hero__credential-sep">|</span>
+        </div>
+        <div class="hero__credential">
+          <img src="images/check-circle-cred.png" alt="" class="hero__credential-icon">
+          <span>Top 1% Global Expert</span>
+          <span class="hero__credential-sep">|</span>
+        </div>
+        <div class="hero__credential">
+          <img src="images/check-circle-cred.png" alt="" class="hero__credential-icon">
+          <span>15+ Years Experience</span>
+          <span class="hero__credential-sep">|</span>
+        </div>
+        <div class="hero__credential">
+          <img src="images/check-circle-cred.png" alt="" class="hero__credential-icon">
+          <span>200+ Global Clients</span>
+          <span class="hero__credential-sep">|</span>
+        </div>
+        <div class="hero__credential">
+          <img src="images/check-circle-cred.png" alt="" class="hero__credential-icon">
+          <span>100+ Financial Models Engineered</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INDUSTRY DISCONNECT ===== -->
+  <section class="disconnect" id="about">
+    <div class="disconnect__inner">
+      <h2 class="disconnect__title">
+        The Industry Disconnect:<br>
+        <span class="text-lime">Compliance Without</span> Commercial Strategy.
+      </h2>
+      <p class="disconnect__subtitle">
+        Many global organizations face critical structural bottlenecks when scaling in the Islamic finance sector:
+      </p>
+
+      <div class="disconnect__cards">
+        <div class="problem-card">
+          <div class="problem-card__num">1</div>
+          <h3 class="problem-card__title">Theoretical Friction</h3>
+          <p class="problem-card__desc">Static compliance opinions from traditional scholars that lack a viable go-to-market strategy.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-card__num">2</div>
+          <h3 class="problem-card__title">Operational Incompatibility</h3>
+          <p class="problem-card__desc">Financial products that appear compliant on paper but cannot be integrated into modern fintech ecosystems or smart contracts.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-card__num">3</div>
+          <h3 class="problem-card__title">Governance Gaps</h3>
+          <p class="problem-card__desc">Rapidly scaling digital banks and platforms that lack the rigorous oversight required to satisfy institutional investors and central bank regulators.</p>
+        </div>
+      </div>
+
+      <div class="disconnect__quote">
+        <div class="disconnect__quote-inner">
+          <div class="disconnect__quote-left">
+            <span class="disconnect__quote-tag">The Elaf Solution</span>
+            <blockquote class="disconnect__quote-text">
+              "We solve these challenges at the foundational level. We seamlessly align classical Fiqh with modern financial engineering, ensuring your enterprise scales both ethically and profitably."
+            </blockquote>
+          </div>
+          <span class="disconnect__quote-mark" aria-hidden="true">”</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <img src="images/engineering-bg.png" alt="" class="services__bg">
+    <div class="services__inner">
+      <div class="services__header">
+        <h2 class="services__title">End-to-End Islamic Financial Engineering.</h2>
+        <p class="services__subtitle">Highly specialized, commercially viable structuring across traditional and frontier financial sectors.</p>
+      </div>
+
+      <div class="services__grid">
+        <div class="service-card">
+          <div class="service-card__icon">
+            <img src="images/service-icon-01.png" alt="">
+          </div>
+          <span class="service-card__num">01</span>
+          <h3 class="service-card__title">Islamic Financial Product Structuring</h3>
+          <p class="service-card__desc">Murabaha, Musharakah, Mudarabah, Ijarah, Takaful and Sukuk frameworks engineered for regulatory compliance.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <img src="images/service-icon-02.png" alt="">
+          </div>
+          <span class="service-card__num">02</span>
+          <h3 class="service-card__title">Digital Banking &amp; Islamic Windows</h3>
+          <p class="service-card__desc">End-to-end Shariah compliance for digital-only Islamic banks and conventional tier-1 bank Islamic Windows.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <img src="images/service-icon-3.png" alt="">
+          </div>
+          <span class="service-card__num">03</span>
+          <h3 class="service-card__title">Islamic FinTech, Crypto &amp; Digital Assets</h3>
+          <p class="service-card__desc">Fatawa and structural advisory on cryptocurrencies, stablecoins, tokenized RWAs and embedded finance.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <img src="images/service-icon-04.png" alt="">
+          </div>
+          <span class="service-card__num">04</span>
+          <h3 class="service-card__title">RegTech Integration &amp; Automation</h3>
+          <p class="service-card__desc">Automating Shariah screening and compliance protocols directly within fintech UI/UX and backend workflows.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <img src="images/service-icon-05.png" alt="">
+          </div>
+          <span class="service-card__num">05</span>
+          <h3 class="service-card__title">Frontier Market Expansion</h3>
+          <p class="service-card__desc">Consulting central banks in Sub-Saharan Africa and Central Asia to draft inaugural Islamic banking legislation.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <img src="images/service-icon-1.png" alt="">
+          </div>
+          <span class="service-card__num">06</span>
+          <h3 class="service-card__title">Sustainable Finance &amp; Green Sukuk</h3>
+          <p class="service-card__desc">ESG-aligned funds, ethical portfolios, and Green Sukuk issuances aligned with Maqasid al-Shariah.</p>
+        </div>
+      </div>
+
+      <div class="services__cta-row">
+        <a href="#" class="btn btn--outline-accent services__cta">
+          View All Services
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4L10 8L6 12" stroke="#E2FF54" stroke-width="1.33"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FRAMEWORK ===== -->
+  <section class="framework" id="framework">
+    <div class="framework__inner">
+      <h2 class="framework__title">A Framework Built for Clarity and Speed.</h2>
+      <p class="framework__subtitle">Our six-phase engagement model ensures rigorous compliance without sacrificing time-to-market.</p>
+
+      <div class="framework__grid">
+        <div class="phase-card">
+          <div class="phase-card__circle">1</div>
+          <span class="phase-card__bg-num">01</span>
+          <h3 class="phase-card__title">Strategic Consultation</h3>
+          <p class="phase-card__desc">Defining your commercial and operational objectives.</p>
+        </div>
+        <div class="phase-card">
+          <div class="phase-card__circle">2</div>
+          <span class="phase-card__bg-num">02</span>
+          <h3 class="phase-card__title">Diagnostic Review</h3>
+          <p class="phase-card__desc">Identifying structural and compliance gaps.</p>
+        </div>
+        <div class="phase-card">
+          <div class="phase-card__circle">3</div>
+          <span class="phase-card__bg-num">03</span>
+          <h3 class="phase-card__title">Shariah Structuring</h3>
+          <p class="phase-card__desc">Engineering the financial model and operational workflow.</p>
+        </div>
+        <div class="phase-card">
+          <div class="phase-card__circle">4</div>
+          <span class="phase-card__bg-num">04</span>
+          <h3 class="phase-card__title">Documentation &amp; Certification</h3>
+          <p class="phase-card__desc">Drafting airtight Islamic contracts and issuing binding rulings.</p>
+        </div>
+        <div class="phase-card">
+          <div class="phase-card__circle">5</div>
+          <span class="phase-card__bg-num">05</span>
+          <h3 class="phase-card__title">Implementation Support</h3>
+          <p class="phase-card__desc">Guiding your development and operations teams through deployment.</p>
+        </div>
+        <div class="phase-card">
+          <div class="phase-card__circle">6</div>
+          <span class="phase-card__bg-num">06</span>
+          <h3 class="phase-card__title">Ongoing Governance</h3>
+          <p class="phase-card__desc">Annual board representation and continuous audit oversight.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CLIENTS ===== -->
+  <section class="clients" id="case-studies">
+    <div class="clients__inner">
+      <span class="clients__tag">Trusted By</span>
+      <h2 class="clients__title">200+ Global Clients Across 6 Continents</h2>
+      <p class="clients__subtitle">USA · UK · UAE · KSA · Canada · Europe · Sub-Saharan Africa</p>
+
+      <div class="clients__logos">
+        <span class="client-logo">EQRAZ</span>
+        <span class="client-logo">Musaffa</span>
+        <span class="client-logo">Malco Energy</span>
+        <span class="client-logo">HTC Global</span>
+        <span class="client-logo">Systemrapid</span>
+        <span class="client-logo">Gulf Capital</span>
+        <span class="client-logo">IFinance Corp</span>
+        <span class="client-logo">AlHalal Bank</span>
+        <span class="client-logo">TakaTech</span>
+        <span class="client-logo">ZakatPay</span>
+        <span class="client-logo">GreenSukuk</span>
+        <span class="client-logo">NoorFund</span>
+      </div>
+
+      <div class="clients__globe">
+        <img src="images/logo-sphere.png" alt="Global Reach" class="clients__globe-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="cta-section">
+    <div class="cta-section__inner">
+      <h2 class="cta-section__title">
+        Build Your Financial Strategy on an <span class="text-accent">Unshakable Foundation.</span>
+      </h2>
+      <p class="cta-section__desc">Partner with globally recognized Shariah experts to structure compliant, commercially viable, and regulator-ready financial solutions.</p>
+      <a href="#contact" class="btn btn--primary btn--lg">Schedule Executive Consultation</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__col footer__col--brand">
+          <div class="logo logo--footer">
+            <span class="logo__name logo__name--lg">ELAF</span>
+            <span class="logo__sub">Shariah Advisory</span>
+          </div>
+          <p class="footer__tagline">Bridging Classical Authority with Global Digital Infrastructure.</p>
+          <div class="footer__contact-list">
+            <div class="footer__contact-item">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.33 1.17h9.33v11.67H2.33z" stroke="#C9A84C" stroke-width="1.17"/><circle cx="7" cy="5.25" r="1.75" stroke="#C9A84C" stroke-width="1.17"/></svg>
+              <div>
+                <span>Corporate Hub, Wah Cantt / Rawalpindi,</span>
+                <span>Punjab, Pakistan</span>
+              </div>
+            </div>
+            <div class="footer__contact-item">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1.17" y="2.33" width="11.67" height="9.33" rx="1" stroke="#C9A84C" stroke-width="1.17"/><path d="M1.17 4.08h11.67" stroke="#C9A84C" stroke-width="1.17"/></svg>
+              <span>executive@elafadvisory.com</span>
+            </div>
+            <div class="footer__contact-item">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="5.83" stroke="#C9A84C" stroke-width="1.17"/></svg>
+              <span>+92 300-000-0000 (WhatsApp / Direct)</span>
+            </div>
+            <div class="footer__contact-item">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="5.83" stroke="#C9A84C" stroke-width="1.17"/><path d="M7 3.5V7l2.33 2.33" stroke="#C9A84C" stroke-width="1.17"/></svg>
+              <div>
+                <span>Mon – Sat: 8:00 AM – 5:00 PM (PKT)</span>
+                <span>Sunday: Closed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__col footer__col--nav">
+          <h4 class="footer__heading">Quick Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="#services"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2.5L9.5 6L6 9.5" stroke="#94A3B8" stroke-width="1"/></svg>Advisory Services</a></li>
+            <li><a href="#case-studies"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2.5L9.5 6L6 9.5" stroke="#94A3B8" stroke-width="1"/></svg>Case Studies</a></li>
+            <li><a href="#resources"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2.5L9.5 6L6 9.5" stroke="#94A3B8" stroke-width="1"/></svg>Knowledge &amp; Resources</a></li>
+            <li><a href="#"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2.5L9.5 6L6 9.5" stroke="#94A3B8" stroke-width="1"/></svg>Ask the Advisor</a></li>
+            <li><a href="#"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2.5L9.5 6L6 9.5" stroke="#94A3B8" stroke-width="1"/></svg>Client Portal Login</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col--newsletter">
+          <h4 class="footer__heading">Executive Intelligence Briefing</h4>
+          <p class="footer__newsletter-desc">Subscribe for the latest updates on Islamic finance regulations and fintech innovations.</p>
+          <form class="footer__form">
+            <input type="email" placeholder="Enter your email address" class="footer__input">
+            <button type="submit" class="btn btn--primary btn--full">Subscribe</button>
+          </form>
+          <div class="footer__social-section">
+            <h4 class="footer__heading">Follow Us</h4>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                <img src="images/linkedin.png" alt="LinkedIn">
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Twitter">
+                <img src="images/twitter.png" alt="Twitter">
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img src="images/facebook.png" alt="Facebook">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; 2026 Elaf Shariah Advisory. All Rights Reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Disclaimer</a>
+          <a href="#">FAQs</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
