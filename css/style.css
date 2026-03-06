@@ -793,6 +793,7 @@ img {
 /* ===== CLIENTS ===== */
 .clients {
   position: relative;
+  z-index: 1;
   background: var(--white);
   padding: 80px 0 170px;
   text-align: center;
@@ -868,8 +869,8 @@ img {
 
 .clients__globe {
   position: absolute;
-  right: 120px;
-  bottom: -190px;
+  right: 130px;
+  bottom: -255px;
   width: 352px;
   height: 352px;
   z-index: 1;
@@ -884,6 +885,8 @@ img {
 
 /* ===== CTA SECTION ===== */
 .cta-section {
+  position: relative;
+  z-index: 2;
   background: var(--dark-secondary);
   padding: 42px 0;
   border-bottom: 0.8px solid var(--border-gold-15);
