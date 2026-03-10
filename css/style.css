@@ -1535,12 +1535,14 @@ img {
 /* ── Profile Section ── */
 .about-profile {
   position: relative;
-  width: 1151.2px;
-  height: 900.6px;
+  width: min(100%, 1151.2px);
+  min-height: 760px;
   margin: 0 auto;
   border-top: 0.8px solid rgba(201, 168, 76, 0.10);
   background: #070E1A;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 .about-profile__bg {
   position: absolute;
@@ -1555,13 +1557,14 @@ img {
 .about-profile__inner {
   position: relative;
   z-index: 1;
+  width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 72px 24px;
+  padding: 96px 24px 88px;
   display: grid;
   grid-template-columns: 340px 1fr;
   gap: 64px;
-  align-items: start;
+  align-items: center;
 }
 /* Left column */
 .about-profile__image-wrap {
@@ -1579,28 +1582,34 @@ img {
 }
 .about-profile__eyebrow {
   display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 11px;
+  font-style: normal;
   font-weight: 600;
+  line-height: 16.5px;
   letter-spacing: 2.2px;
   text-transform: uppercase;
-  color: var(--accent);
+  color: #E2FF54;
   margin-bottom: 10px;
 }
 .about-profile__name {
-  font-size: 22px;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
-  font-weight: 800;
-  color: var(--white);
+  color: #FFF;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
   margin-bottom: 4px;
 }
 .about-profile__roles {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  color: #E2FF54;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 13px;
+  font-style: normal;
   font-weight: 600;
-  letter-spacing: 1.8px;
+  line-height: 19.5px;
+  letter-spacing: 1.04px;
   text-transform: uppercase;
-  color: var(--text-secondary);
   margin-bottom: 20px;
 }
 .about-profile__tags {
@@ -1616,11 +1625,13 @@ img {
   border-radius: 20px;
   border: 1px solid rgba(201, 168, 76, 0.25);
   background: rgba(201, 168, 76, 0.08);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 11px;
+  font-style: normal;
   font-weight: 500;
-  color: var(--accent);
-  letter-spacing: 0.4px;
+  line-height: 16.5px;
+  letter-spacing: 0.66px;
+  color: #C9A84C;
 }
 /* Right column */
 .about-profile__quote {
@@ -1635,11 +1646,12 @@ img {
   border: none;
 }
 .about-profile__bio {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-style: italic;
   font-weight: 400;
-  line-height: 25px;
-  color: var(--text-light);
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.70);
   margin-bottom: 32px;
 }
 .about-profile__creds {
@@ -1653,20 +1665,20 @@ img {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text-light);
-  line-height: 24px;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  color: #CBD5E1;
   padding: 10px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
-.about-profile__creds li::before {
-  content: '';
+.about-profile__cred-icon {
   flex-shrink: 0;
   width: 22px;
   height: 22px;
-  background: url('../images/check-circle-cred.png') center / contain no-repeat;
+  object-fit: contain;
   opacity: 0.9;
 }
 
@@ -1688,11 +1700,15 @@ img {
   margin-bottom: 16px;
 }
 .about-board__intro {
-  font-size: 16px;
-  color: var(--text-muted);
+  color: #64748B;
+  text-align: center;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
   max-width: 640px;
   margin: 0 auto 48px;
-  line-height: 26px;
+  line-height: 25.5px;
 }
 .about-board__grid {
   display: grid;
@@ -1721,21 +1737,46 @@ img {
   margin-bottom: 16px;
 }
 .about-board__name {
-  font-size: 18px;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
-  font-weight: 800;
-  color: var(--white);
+  color: #FFF;
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28.5px;
   margin-bottom: 4px;
 }
 .about-board__role {
-  font-size: 13px;
-  color: var(--accent);
+  color: #C9A84C;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
   margin-bottom: 12px;
 }
 .about-board__desc {
+  margin: 0;
+}
+
+/* Card text: first desc line = qualifications, second = main paragraph */
+.about-board__card p.about-board__desc:nth-of-type(2) {
+  color: #94A3B8;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20.8px;
+  margin: 0 0 14px;
+}
+.about-board__card p.about-board__desc:nth-of-type(3) {
+  color: #64748B;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 14px;
-  color: var(--text-muted);
-  line-height: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.5px;
   margin: 0;
 }
 
