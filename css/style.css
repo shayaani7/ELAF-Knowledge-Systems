@@ -664,12 +664,18 @@ img {
 
 .services__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 354px);
   gap: 20px;
   margin-bottom: 48px;
+  justify-content: center;
 }
 
 .service-card {
+  display: flex;
+  width: 354px;
+  height: 585px;
+  flex-shrink: 0;
+  flex-direction: column;
   background: var(--dark-card);
   border-radius: 6px;
   border: 0.8px solid rgba(201, 168, 76, 0.12);
@@ -706,19 +712,43 @@ img {
 
 .service-card__title {
   font-size: 15px;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  font-family: 'Rockwell Extra Bold', 'Rockwell', 'Georgia', serif;
   font-weight: 800;
   line-height: 23.4px;
-  color: var(--text-light);
-  margin-bottom: 12px;
+  color: #E2E8F0;
+  margin-bottom: 24px;
 }
 
-.service-card__desc {
+.service-card__body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.service-card__meta {
   font-size: 13px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 23.8px;
-  color: var(--text-dim);
+  color: #D9D9D9;
+  margin: 0;
+}
+
+.service-card__label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--text-light);
+  font-weight: 700;
+}
+
+.service-card__cta {
+  width: 204px;
+  justify-content: center;
+  align-self: center;
+  margin-top: 32px;
+  padding: 12px 24px;
+  border-width: 1.5px;
 }
 
 .services__cta-row {
@@ -1391,13 +1421,11 @@ img {
 }
 .about-hero__title {
   max-width: 985px;
-  width: 985px;
-  height: 121px;
-  font-size: 52.488px;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  font-size: 48px;
+  font-family: 'Rockwell Extra Bold', 'Rockwell', 'Georgia', serif;
   font-weight: 800;
-  line-height: 60.3612px;
-  color: var(--white);
+  line-height: 52px;
+  color: #FFF;
   margin-bottom: 26px;
 }
 .about-hero__line {
@@ -1406,11 +1434,11 @@ img {
 }
 .about-hero__desc {
   max-width: 760px;
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-weight: 400;
-  line-height: 1.9;
-  color: var(--text-light);
+  line-height: 30.6px;
+  color: #FFF;
   margin: 0;
 }
 
