@@ -1952,3 +1952,299 @@ img {
   .about-board__grid { grid-template-columns: 1fr; }
   .about-testimonials__grid { grid-template-columns: 1fr; }
 }
+
+/* ========================================
+   LEXISYNC PAGE
+   ======================================== */
+
+/* ── Showcase Section ── */
+.page-lexisync {
+  background: var(--dark-primary);
+}
+.lexi-showcase {
+  position: relative;
+  width: 100%;
+  background: var(--dark-primary);
+  padding: 118px 0 40px;
+  overflow: hidden;
+}
+.lexi-showcase__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 0;
+}
+.lexi-showcase__inner {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 27px 0 24px;
+}
+.lexi-hero__eyebrow {
+  display: block;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  color: #E2FF54;
+  margin: 0 0 18px 8px;
+}
+.lexi-hero__frame {
+  width: 1010px;
+  max-width: 100%;
+  height: auto;
+  min-height: 325px;
+  border-radius: 35px;
+  background: rgba(217, 217, 217, 0.20);
+  padding: 56px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto 36px;
+}
+.lexi-hero__title {
+  width: 825.866px;
+  max-width: 100%;
+  color: #FFF;
+  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  font-size: 44.008px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 50.609px;
+  margin-bottom: 20px;
+}
+.lexi-hero__title .text-accent {
+  color: var(--accent);
+}
+.lexi-hero__desc {
+  width: 702px;
+  max-width: 100%;
+  color: #FFF;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30.6px;
+}
+
+/* ── Service Cards (Accordion Style) ── */
+.lexi-services__inner {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.lexi-service-card {
+  width: 998.4px;
+  max-width: 100%;
+  align-self: center;
+  margin: 0 auto;
+  border: 0.8px solid rgba(201, 168, 76, 0.12);
+  border-radius: 3px;
+  background: rgba(6, 17, 30, 0.22);
+  box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.04);
+  overflow: hidden;
+  backdrop-filter: blur(1px);
+  transition: background 0.2s, border-color 0.2s;
+}
+.lexi-service-card:hover {
+  background: rgba(6, 17, 30, 0.36);
+  border-color: rgba(201, 168, 76, 0.18);
+}
+.lexi-service-card__header {
+  display: flex;
+  width: 998.4px;
+  max-width: 100%;
+  padding: 24px 28px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+.lexi-service-card__icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 0.8px solid rgba(201, 168, 76, 0.08);
+  background: rgba(13, 27, 42, 0.42);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.lexi-service-card__content {
+  flex: 1;
+  min-width: 0;
+}
+.lexi-service-card__left {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 6px;
+  min-width: 0;
+}
+.lexi-service-card__num {
+  color: #475569;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.lexi-service-card__num::after {
+  content: " · ";
+}
+.lexi-service-card__tag {
+  color: #475569;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.lexi-service-card__title {
+  color: #CBD5E1;
+  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 31.5px;
+  margin: 0;
+}
+.lexi-service-card__arrow {
+  flex-shrink: 0;
+  opacity: 0.35;
+}
+
+/* ── Not Sure CTA ── */
+.lexi-cta {
+  width: 100%;
+  min-height: 400px;
+  border-top: 0.8px solid rgba(201, 168, 76, 0.10);
+  background: #FFF;
+  padding: 0;
+}
+.lexi-cta__inner {
+  max-width: 1151.2px;
+  margin: 0 auto;
+  min-height: 400px;
+  padding: 18px 40px 0;
+  display: grid;
+  grid-template-columns: 430px 1fr;
+  gap: 52px;
+  align-items: start;
+}
+.lexi-cta__image {
+  align-self: end;
+  transform: translateY(138px);
+}
+.lexi-cta__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 14px;
+}
+.lexi-cta__image,
+.lexi-cta__img {
+  width: 100%;
+}
+.lexi-cta__image {
+  max-width: 420px;
+  overflow: hidden;
+}
+.lexi-cta__img {
+  object-fit: contain;
+}
+.lexi-cta__title {
+  color: #0A1628;
+  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 42px;
+  margin-bottom: 20px;
+  max-width: 520px;
+}
+.lexi-cta__desc {
+  color: #64748B;
+  text-align: center;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 32px;
+  max-width: 470px;
+}
+.lexi-cta__btn {
+  display: inline-flex;
+  padding: 15.6px 32px 16.4px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 7.325px;
+  border-radius: 4px;
+  background: #E2FF54;
+  color: #070E1A;
+  text-align: center;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.56px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .lexi-showcase {
+    padding: 108px 0 28px;
+  }
+  .lexi-showcase__inner {
+    padding: 0 16px;
+  }
+  .lexi-hero__frame {
+    padding: 36px 28px;
+    min-height: auto;
+    margin-bottom: 24px;
+  }
+  .lexi-hero__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .lexi-service-card__header {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px 20px;
+  }
+  .lexi-service-card__content {
+    flex-basis: calc(100% - 40px);
+  }
+  .lexi-service-card__left {
+    flex-wrap: wrap;
+  }
+  .lexi-service-card__title {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .lexi-cta__inner {
+    grid-template-columns: 1fr;
+    padding: 40px 24px;
+  }
+}
