@@ -1542,6 +1542,8 @@ img {
   margin-bottom: 24px;
 }
 .about-theology__highlight {
+  display: inline-block;
+  white-space: nowrap;
   background: #E2FF54;
   color: #0A1628;
   padding: 2px 8px 4px 8px;
@@ -1758,9 +1760,15 @@ img {
 }
 
 .about-board {
-  background: var(--dark-primary);
+  position: relative;
+  background-color: var(--dark-primary);
+  background-image: url('../images/ssb-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 80px 0;
   text-align: center;
+  z-index: 1;
 }
 .about-board__inner {
   max-width: var(--max-width);
