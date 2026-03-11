@@ -2337,12 +2337,15 @@ img {
 }
 
 /* ── Main Content ── */
+/* Contact Information + Engagement Standards + Executive Onboarding Form live here (contact.html .contact-main) */
 .contact-main {
   position: relative;
   width: 100%;
-  background: var(--dark-primary);
+  background: #002E36;
+  border-bottom: 0.8px solid rgba(201, 168, 76, 0.15);
   padding: 60px 0 100px;
   z-index: 1;
+  overflow: hidden;
 }
 .contact-main__inner {
   max-width: var(--max-width);
@@ -2463,11 +2466,37 @@ img {
 
 /* ── Contact Form (Right) ── */
 .contact-form-wrapper {
-  background: rgba(13, 27, 42, 0.6);
-  border: 1px solid rgba(148, 163, 184, 0.1);
-  border-radius: 16px;
-  padding: 48px;
-  backdrop-filter: blur(10px);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0.8px 0.8px 32.8px 0.8px;
+  border-radius: 8px;
+  border: 0.8px solid rgba(201, 168, 76, 0.15);
+  background: #0A1628;
+  box-shadow: 0 4px 9.4px 0 rgba(255, 255, 255, 0.25);
+}
+.contact-form-wrapper .contact-form__title,
+.contact-form-wrapper .contact-form__desc,
+.contact-form-wrapper .contact-form {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.contact-form-wrapper .contact-form {
+  padding: 0 32px 32px;
+  align-self: stretch;
+}
+.contact-form-wrapper .contact-form__title {
+  padding: 32px 32px 0;
+  margin-bottom: 0;
+}
+.contact-form-wrapper .contact-form__desc {
+  padding: 0 32px;
+  margin-bottom: 0;
 }
 .contact-form__title {
   color: #FFF;
@@ -2598,7 +2627,333 @@ img {
   .contact-form__row {
     grid-template-columns: 1fr;
   }
-  .contact-form-wrapper {
+  .contact-form-wrapper .contact-form {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+  }
+  .contact-form-wrapper .contact-form__title {
+    padding: 24px 20px 0;
+  }
+  .contact-form-wrapper .contact-form__desc {
+    padding: 0 20px;
+  }
+}
+
+/* ========================================
+   LEADERSHIP PAGE
+   ======================================== */
+.page-leadership {
+  background-color: var(--dark-primary);
+  background-image: url('../images/contact-main-bg.png');
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+/* ── Hero ── */
+.leadership-hero {
+  position: relative;
+  width: 100%;
+  padding: 56px 0 0;
+  overflow: hidden;
+}
+.leadership-hero__bg {
+  display: none;
+}
+.leadership-hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.leadership-hero__frame {
+  width: 2000px;
+  max-width: 100%;
+  height: 371px;
+  background-image: url('../images/leadership-hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+.leadership-hero__content {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.leadership-hero__eyebrow {
+  display: block;
+  color: #C9A84C;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16.5px; /* 150% */
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.leadership-hero__title {
+  color: #FFF;
+  font-family: "Rockwell Extra Bold", Rockwell, Georgia, serif;
+  font-size: 52.488px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 60.361px; /* 115% */
+  margin-bottom: 24px;
+}
+.leadership-hero__title .text-accent {
+  color: #E2FF54;
+}
+.leadership-hero__desc {
+  color: #94A3B8;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30.6px; /* 180% */
+  max-width: 750px;
+}
+
+/* ── Process Steps ── */
+.leadership-process {
+  position: relative;
+  width: 100%;
+  padding: 0 0 80px;
+  z-index: 1;
+}
+.leadership-process__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 800px;
+}
+.process-step {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 32px;
+  background: rgba(13, 27, 42, 0.4);
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  border-radius: 8px;
+  transition: background 0.3s, border-color 0.3s;
+}
+.process-step:hover {
+  background: rgba(13, 27, 42, 0.8);
+  border-color: rgba(201, 168, 76, 0.3);
+}
+.process-step__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: rgba(201, 168, 76, 0.08);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.process-step__content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.process-step__phase {
+  color: #C9A84C;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.process-step__title {
+  color: #FFF;
+  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* ── Ask Form ── */
+.leadership-ask {
+  position: relative;
+  width: 100%;
+  padding: 60px 0 100px;
+  z-index: 1;
+}
+.leadership-ask__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+}
+.ask-form-wrapper {
+  width: 100%;
+  max-width: 800px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  box-sizing: border-box;
+  padding: 48px;
+  border-radius: 8px;
+  border: 0.8px solid rgba(201, 168, 76, 0.15);
+  background: #0A1628;
+  box-shadow: 0 4px 9.4px 0 rgba(255, 255, 255, 0.05);
+}
+.ask-form__title {
+  color: #FFF;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.ask-form__desc {
+  color: #94A3B8;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 0;
+  max-width: 600px;
+}
+.ask-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.ask-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.ask-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ask-form__label {
+  color: #64748B;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.ask-form__input {
+  background: rgba(7, 14, 26, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 6px;
+  padding: 14px 16px;
+  color: #FFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+.ask-form__input:focus {
+  outline: none;
+  border-color: #E2FF54;
+}
+.ask-form__input::placeholder {
+  color: #4A5565;
+}
+.ask-form__select {
+  appearance: none;
+  width: 100%;
+}
+.ask-form__select-wrapper {
+  position: relative;
+}
+.ask-form__select-wrapper::after {
+  content: '';
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #94A3B8;
+  pointer-events: none;
+}
+.ask-form__textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.ask-form__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  gap: 24px;
+}
+.ask-form__disclaimer {
+  color: #4A5565;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.ask-form__disclaimer a {
+  color: #E2FF54;
+  text-decoration: none;
+}
+.ask-form__disclaimer a:hover {
+  text-decoration: underline;
+}
+.ask-form__submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #E2FF54;
+  color: #070E1A;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.ask-form__submit:hover {
+  background: #d4f04c;
+}
+
+@media (max-width: 900px) {
+  .leadership-hero__inner {
+    padding: 0 24px;
+  }
+  .leadership-hero__frame {
+    height: auto;
+    padding: 40px 24px;
+  }
+  .leadership-hero__title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .ask-form__row {
+    grid-template-columns: 1fr;
+  }
+  .ask-form__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ask-form-wrapper {
     padding: 32px 24px;
   }
 }
