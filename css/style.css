@@ -1036,7 +1036,7 @@ img {
   position: relative;
   z-index: 2;
   background: var(--dark-secondary);
-  padding: 42px 0;
+  padding: 45px 0;
   border-bottom: 0.8px solid var(--border-gold-15);
   text-align: center;
 }
