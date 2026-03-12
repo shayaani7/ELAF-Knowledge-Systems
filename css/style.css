@@ -2668,6 +2668,18 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: 24px;
 }
+.contact-form__row > .contact-form__group {
+  min-width: 0; /* prevent grid blowout on narrow screens */
+}
+/* Spam honeypot — hidden from users */
+.contact-form__honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
 .contact-form__group {
   display: flex;
   flex-direction: column;
@@ -2688,7 +2700,10 @@ img {
   padding: 14px 16px;
   color: #FFF;
   font-family: 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 16px; /* 16px+ reduces iOS zoom on focus */
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   transition: border-color 0.2s;
 }
 .contact-form__input:focus {
@@ -2757,6 +2772,50 @@ img {
   font-size: 11px;
   text-align: center;
   line-height: 1.6;
+}
+.contact-form__success {
+  color: #E2FF54;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 16px;
+  margin: 0 32px 16px;
+  background: rgba(226, 255, 84, 0.08);
+  border: 1px solid rgba(226, 255, 84, 0.25);
+  border-radius: 6px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .contact-form__success {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form-wrapper .contact-form {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+    gap: 20px;
+  }
+  .contact-form-wrapper .contact-form__title {
+    padding: 24px 16px 0;
+    font-size: 20px;
+    line-height: 1.35;
+  }
+  .contact-form-wrapper .contact-form__desc {
+    padding: 0 16px;
+    font-size: 12px;
+  }
+  .contact-form__row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .contact-form__submit {
+    padding: 18px 16px;
+    min-height: 48px; /* touch target */
+  }
 }
 
 @media (max-width: 900px) {

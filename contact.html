@@ -127,44 +127,59 @@
 
       <div class="contact-form-wrapper">
         <h2 class="contact-form__title">Executive Onboarding Form</h2>
-        <p class="contact-form__desc">All fields marked with * are required. Your information is fully confidential.</p>
+        <p class="contact-form__desc">All fields marked with * are required. Your information is fully confidential. Submissions are sent securely to our team.</p>
+        <p class="contact-form__success" id="exec-form-success" hidden>Thank you — your request was received. We will respond shortly.</p>
         
-        <form class="contact-form">
+        <!-- Formsubmit: delivers to shayanfaiq34@gmail.com (no backend required). Confirm first submission via email link. -->
+        <form class="contact-form" action="https://formsubmit.co/shayanfaiq34@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Executive Onboarding — ELAF Website">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <!-- Honeypot: leave empty; spam bots often fill hidden fields -->
+          <input type="text" name="_gotcha" class="contact-form__honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
           <div class="contact-form__row">
             <div class="contact-form__group">
-              <label class="contact-form__label">FULL NAME *</label>
-              <input type="text" class="contact-form__input" placeholder="Your name" required>
+              <label class="contact-form__label" for="exec-name">FULL NAME *</label>
+              <input id="exec-name" type="text" name="full_name" class="contact-form__input" placeholder="Your name" required autocomplete="name">
             </div>
             <div class="contact-form__group">
-              <label class="contact-form__label">CORPORATE TITLE</label>
-              <input type="text" class="contact-form__input" placeholder="CEO / Head of Product">
+              <label class="contact-form__label" for="exec-title">CORPORATE TITLE</label>
+              <input id="exec-title" type="text" name="corporate_title" class="contact-form__input" placeholder="CEO / Head of Product" autocomplete="organization-title">
+            </div>
+          </div>
+
+          <div class="contact-form__row">
+            <div class="contact-form__group">
+              <label class="contact-form__label" for="exec-email">WORK EMAIL *</label>
+              <input id="exec-email" type="email" name="email" class="contact-form__input" placeholder="you@company.com" required autocomplete="email" inputmode="email">
+            </div>
+            <div class="contact-form__group">
+              <label class="contact-form__label" for="exec-company">INSTITUTION / COMPANY *</label>
+              <input id="exec-company" type="text" name="company" class="contact-form__input" placeholder="Company or Institution name" required autocomplete="organization">
             </div>
           </div>
 
           <div class="contact-form__group">
-            <label class="contact-form__label">INSTITUTION / COMPANY *</label>
-            <input type="text" class="contact-form__input" placeholder="Company or Institution name" required>
+            <label class="contact-form__label" for="exec-region">REGION</label>
+            <input id="exec-region" type="text" name="region" class="contact-form__input" placeholder="e.g. GCC, UK, North America" autocomplete="address-level1">
           </div>
 
           <div class="contact-form__group">
-            <label class="contact-form__label">REGION</label>
-            <input type="text" class="contact-form__input">
-          </div>
-
-          <div class="contact-form__group">
-            <label class="contact-form__label">SELECT DIVISION</label>
+            <label class="contact-form__label" for="exec-division">SELECT DIVISION</label>
             <div class="contact-form__select-wrapper">
-              <select class="contact-form__input contact-form__select">
-                <option>e.g. Elaf Shariah Advisory</option>
-                <option>Elaf LexiSync</option>
-                <option>Elaf Digital Academy</option>
+              <select id="exec-division" name="division" class="contact-form__input contact-form__select">
+                <option value="">Select division</option>
+                <option value="Elaf Shariah Advisory">Elaf Shariah Advisory</option>
+                <option value="Elaf LexiSync">Elaf LexiSync</option>
+                <option value="Elaf Digital Academy">Elaf Digital Academy</option>
               </select>
             </div>
           </div>
 
           <div class="contact-form__group">
-            <label class="contact-form__label">PROJECT SCOPE *</label>
-            <textarea class="contact-form__input contact-form__textarea" placeholder="Provide a brief description of your project, goals, and what you require..." required></textarea>
+            <label class="contact-form__label" for="exec-scope">PROJECT SCOPE *</label>
+            <textarea id="exec-scope" name="project_scope" class="contact-form__input contact-form__textarea" placeholder="Provide a brief description of your project, goals, and what you require..." required></textarea>
           </div>
 
           <button type="submit" class="btn contact-form__submit">
@@ -265,5 +280,21 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script>
+    (function () {
+      if (window.location.search.indexOf('sent=1') !== -1) {
+        var el = document.getElementById('exec-form-success');
+        if (el) { el.hidden = false; el.setAttribute('aria-live', 'polite'); }
+      }
+      var f = document.querySelector('.contact-form');
+      if (f && f.getAttribute('action') && f.getAttribute('action').indexOf('formsubmit.co') !== -1) {
+        var next = document.createElement('input');
+        next.type = 'hidden';
+        next.name = '_next';
+        next.value = window.location.origin + window.location.pathname + '?sent=1';
+        f.insertBefore(next, f.firstChild);
+      }
+    })();
+  </script>
 </body>
 </html>
