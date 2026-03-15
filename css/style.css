@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
 
 *,
 *::before,
@@ -9,27 +9,27 @@
 }
 
 :root {
-  --dark-primary: #070E1A;
-  --dark-secondary: #0A1628;
-  --dark-card: #0D1B2A;
-  --gold: #C9A84C;
-  --accent: #E2FF54;
-  --lime: #BEE305;
+  --dark-primary: #070e1a;
+  --dark-secondary: #0a1628;
+  --dark-card: #0d1b2a;
+  --gold: #c9a84c;
+  --accent: #e2ff54;
+  --lime: #bee305;
   --white: #ffffff;
-  --text-light: #E2E8F0;
-  --text-muted: #CBD5E1;
-  --text-secondary: #94A3B8;
-  --text-dim: #64748B;
+  --text-light: #e2e8f0;
+  --text-muted: #cbd5e1;
+  --text-secondary: #94a3b8;
+  --text-dim: #64748b;
   --text-dark: #475569;
-  --text-darker: #4A5565;
-  --text-body: #0A1628;
-  --border-gold-10: rgba(201, 168, 76, 0.10);
+  --text-darker: #4a5565;
+  --text-body: #0a1628;
+  --border-gold-10: rgba(201, 168, 76, 0.1);
   --border-gold-15: rgba(201, 168, 76, 0.15);
-  --border-gold-20: rgba(201, 168, 76, 0.20);
+  --border-gold-20: rgba(201, 168, 76, 0.2);
   --border-gold-25: rgba(201, 168, 76, 0.25);
-  --border-gold-30: rgba(201, 168, 76, 0.30);
-  --border-gold-40: rgba(201, 168, 76, 0.40);
-  --bg-card-light: #F8F9FC;
+  --border-gold-30: rgba(201, 168, 76, 0.3);
+  --border-gold-40: rgba(201, 168, 76, 0.4);
+  --bg-card-light: #f8f9fc;
   --teal: #003947;
   --max-width: 1151.2px;
 }
@@ -39,7 +39,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--text-body);
   background: var(--white);
   line-height: 1.5;
@@ -66,14 +66,16 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 13px;
   line-height: 19.5px;
   letter-spacing: 0.52px;
   border: none;
   cursor: pointer;
-  transition: opacity 0.2s, transform 0.2s;
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
   white-space: nowrap;
 }
 
@@ -136,7 +138,7 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 9px;
-  background: #E2FF54;
+  background: #e2ff54;
   color: var(--text-body);
   font-size: 14px;
   box-sizing: border-box;
@@ -183,7 +185,7 @@ img {
 .logo__name {
   color: var(--gold);
   font-size: 22px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   line-height: 22px;
   letter-spacing: 0.88px;
@@ -198,7 +200,7 @@ img {
 .logo__sub {
   color: var(--text-secondary);
   font-size: 8px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 8px;
@@ -234,7 +236,9 @@ img {
   letter-spacing: 0.26px;
   border-radius: 4px;
   border-bottom: 0.8px solid transparent;
-  transition: color 0.2s, border-color 0.2s;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
 }
 
 .nav__link:hover {
@@ -262,7 +266,9 @@ img {
   height: 2px;
   background: var(--white);
   border-radius: 2px;
-  transition: transform 0.3s, opacity 0.3s;
+  transition:
+    transform 0.3s,
+    opacity 0.3s;
 }
 
 /* ===== HERO ===== */
@@ -338,8 +344,17 @@ img {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 100% 52.19% at 50% 0%, black 0%, rgba(0, 0, 0, 0) 95%),
-    linear-gradient(to bottom, transparent 60%, rgba(7, 14, 26, 0.8) 85%, rgba(7, 14, 26, 0.95) 100%);
+    radial-gradient(
+      ellipse 100% 52.19% at 50% 0%,
+      black 0%,
+      rgba(0, 0, 0, 0) 95%
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 60%,
+      rgba(7, 14, 26, 0.8) 85%,
+      rgba(7, 14, 26, 0.95) 100%
+    );
   pointer-events: none;
   z-index: 5;
 }
@@ -374,7 +389,7 @@ img {
 
 .hero__title {
   font-size: 48px;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
   font-weight: 800;
   line-height: 59.67px;
   color: var(--white);
@@ -387,7 +402,13 @@ img {
 }
 
 .hero__desc {
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 33.25px;
@@ -444,6 +465,41 @@ img {
   margin: 0 12px;
 }
 
+.hero__standard {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.hero__standard-label {
+  color: var(--gold);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.hero__standard-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+
+.hero__standard-list li {
+  color: var(--text-light);
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero__standard-list li::before {
+  content: "\2714";
+  color: var(--gold);
+  font-size: 12px;
+}
+
 /* ===== INDUSTRY DISCONNECT ===== */
 .disconnect {
   position: relative;
@@ -475,22 +531,22 @@ img {
 
 .disconnect__title {
   font-size: 37.55px;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
   font-weight: 800;
   line-height: 48px;
-  color: #0A1628;
+  color: #0a1628;
   text-align: center;
   margin-bottom: 24px;
 }
 
 .disconnect__title .text-lime {
-  color: #BEE305;
+  color: #bee305;
   line-height: 48px;
 }
 
 .disconnect__subtitle {
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 28.8px;
   color: var(--text-body);
@@ -524,9 +580,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #8B6914;
+  color: #8b6914;
   font-size: 14px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   line-height: 21px;
   margin-bottom: 16px;
@@ -534,7 +590,7 @@ img {
 
 .problem-card__title {
   font-size: 14px;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
   font-weight: 800;
   line-height: 25.5px;
   color: var(--text-body);
@@ -543,7 +599,7 @@ img {
 
 .problem-card__desc {
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 23.8px;
   color: var(--text-dim);
@@ -559,7 +615,7 @@ img {
   align-items: center;
   border-radius: 13px;
   overflow: hidden;
-  background: url('../images/elaf-solution-bg.png') 50% / cover no-repeat;
+  background: url("../images/elaf-solution-bg.png") 50% / cover no-repeat;
   box-sizing: border-box;
   margin: 0 auto 60px;
 }
@@ -590,9 +646,9 @@ img {
 }
 
 .disconnect__quote-text {
-  color: #E2E8F0;
+  color: #e2e8f0;
   font-size: 22px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-style: italic;
   font-weight: 500;
   line-height: 37.4px;
@@ -605,10 +661,10 @@ img {
   bottom: -160px;
   color: var(--white);
   font-size: 238.35px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   line-height: 357.525px;
-  opacity: 0.10;
+  opacity: 0.1;
   pointer-events: none;
 }
 
@@ -645,7 +701,7 @@ img {
 
 .services__title {
   font-size: 40.82px;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
   font-weight: 800;
   line-height: 61.24px;
   color: var(--white);
@@ -654,10 +710,10 @@ img {
 
 .services__subtitle {
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 24px;
-  color: #94A3B8;
+  color: #94a3b8;
   max-width: 611px;
   margin: 0 auto;
 }
@@ -712,10 +768,10 @@ img {
 
 .service-card__title {
   font-size: 15px;
-  font-family: 'Rockwell Extra Bold', 'Rockwell', 'Georgia', serif;
+  font-family: "Rockwell Extra Bold", "Rockwell", "Georgia", serif;
   font-weight: 800;
   line-height: 23.4px;
-  color: #E2E8F0;
+  color: #e2e8f0;
   margin-bottom: 24px;
 }
 
@@ -728,10 +784,10 @@ img {
 
 .service-card__meta {
   font-size: 13px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   line-height: 23.8px;
-  color: #D9D9D9;
+  color: #d9d9d9;
   margin: 0;
 }
 
@@ -787,7 +843,7 @@ img {
 
 .framework__title {
   font-size: 40.82px;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
   font-weight: 800;
   line-height: 61.24px;
   color: var(--text-body);
@@ -797,7 +853,7 @@ img {
 
 .framework__subtitle {
   font-size: 15px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 22.5px;
   color: var(--text-dim);
@@ -843,7 +899,7 @@ img {
   top: 16px;
   color: var(--border-gold-10);
   font-size: 48px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   line-height: 48px;
   pointer-events: none;
@@ -851,7 +907,7 @@ img {
 
 .phase-card__title {
   font-size: 17px;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
   font-weight: 800;
   line-height: 25.5px;
   color: var(--text-light);
@@ -860,7 +916,7 @@ img {
 
 .phase-card__desc {
   font-size: 13px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 22.1px;
   color: var(--text-dim);
@@ -886,7 +942,7 @@ img {
 .clients__tag {
   color: var(--accent);
   font-size: 11px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   line-height: 16.5px;
@@ -897,13 +953,13 @@ img {
   width: 106px;
   height: 28px;
   border-radius: 7px;
-  background: #0D1B2A;
+  background: #0d1b2a;
   margin-bottom: 16px;
 }
 
 .clients__title {
   font-size: 34px;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
   font-weight: 800;
   line-height: 51px;
   color: var(--dark-card);
@@ -912,7 +968,7 @@ img {
 
 .clients__subtitle {
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 21px;
   color: var(--text-dark);
@@ -943,7 +999,7 @@ img {
   border: 0.8px solid var(--border-gold-15);
   color: var(--text-secondary);
   font-size: 13px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   line-height: 19.5px;
@@ -1004,31 +1060,58 @@ img {
   position: absolute;
   width: 60px;
   height: 60px;
-  background: radial-gradient(circle, rgba(226, 255, 84, 0.6) 0%, rgba(201, 168, 76, 0.2) 60%, transparent 100%);
+  background: radial-gradient(
+    circle,
+    rgba(226, 255, 84, 0.6) 0%,
+    rgba(201, 168, 76, 0.2) 60%,
+    transparent 100%
+  );
   border-radius: 50%;
   box-shadow: 0 0 40px rgba(226, 255, 84, 0.4);
   animation: pulse-core 4s ease-in-out infinite alternate;
 }
 
 @keyframes spin-axis-1 {
-  0% { transform: rotateX(60deg) rotateY(0deg) rotateZ(0deg); }
-  100% { transform: rotateX(60deg) rotateY(360deg) rotateZ(360deg); }
+  0% {
+    transform: rotateX(60deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(60deg) rotateY(360deg) rotateZ(360deg);
+  }
 }
 @keyframes spin-axis-2 {
-  0% { transform: rotateX(120deg) rotateY(45deg) rotateZ(0deg); }
-  100% { transform: rotateX(120deg) rotateY(45deg) rotateZ(360deg); }
+  0% {
+    transform: rotateX(120deg) rotateY(45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(120deg) rotateY(45deg) rotateZ(360deg);
+  }
 }
 @keyframes spin-axis-3 {
-  0% { transform: rotateX(15deg) rotateY(90deg) rotateZ(0deg); }
-  100% { transform: rotateX(15deg) rotateY(90deg) rotateZ(360deg); }
+  0% {
+    transform: rotateX(15deg) rotateY(90deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(15deg) rotateY(90deg) rotateZ(360deg);
+  }
 }
 @keyframes pulse-core {
-  0% { transform: scale(0.8); opacity: 0.6; }
-  100% { transform: scale(1.2); opacity: 1; }
+  0% {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
 }
 @keyframes float-network {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-20px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
 
 /* ===== CTA SECTION ===== */
@@ -1052,7 +1135,7 @@ img {
   width: 697px;
   max-width: 100%;
   flex-shrink: 0;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Rockwell Extra Bold", Rockwell, Georgia, serif;
   font-size: 32px;
@@ -1066,7 +1149,7 @@ img {
   width: 763px;
   max-width: 100%;
   flex-shrink: 0;
-  color: #94A3B8;
+  color: #94a3b8;
   text-align: center;
   font-family: Montserrat, sans-serif;
   font-size: 15px;
@@ -1199,14 +1282,14 @@ img {
   border-radius: 4px;
   color: var(--text-light);
   font-size: 13px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   outline: none;
   transition: border-color 0.2s;
 }
 
 .footer__input::placeholder {
-  color: rgba(226, 232, 240, 0.50);
+  color: rgba(226, 232, 240, 0.5);
 }
 
 .footer__input:focus {
@@ -1234,7 +1317,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.2s, border-color 0.2s;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
 }
 
 .footer__social-link:hover {
@@ -1440,7 +1525,9 @@ img {
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
 }
 
 .fade-in.visible {
@@ -1449,7 +1536,10 @@ img {
 }
 
 /* ===== ABOUT PAGE ===== */
-.page-about .header { background: var(--dark-secondary); border-bottom: 0.8px solid var(--border-gold-15); }
+.page-about .header {
+  background: var(--dark-secondary);
+  border-bottom: 0.8px solid var(--border-gold-15);
+}
 
 .about-hero {
   position: relative;
@@ -1472,8 +1562,8 @@ img {
 .about-hero__eyebrow {
   display: inline-flex;
   align-items: center;
-  color: #E2FF54;
-  font-family: 'Inter', sans-serif;
+  color: #e2ff54;
+  font-family: "Inter", sans-serif;
   font-size: 11px;
   font-style: normal;
   font-weight: 600;
@@ -1483,11 +1573,22 @@ img {
   white-space: nowrap;
   margin-bottom: 18px;
 }
+.about-hero__target {
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  margin-bottom: 16px;
+}
 .about-hero__gradient {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 78% 72% at 65% 10%, rgba(110, 222, 209, 0.36) 0%, rgba(110, 222, 209, 0) 62%),
+    radial-gradient(
+      ellipse 78% 72% at 65% 10%,
+      rgba(110, 222, 209, 0.36) 0%,
+      rgba(110, 222, 209, 0) 62%
+    ),
     linear-gradient(180deg, rgba(7, 14, 26, 0.2) 0%, rgba(7, 14, 26, 0.72) 100%);
   z-index: 4;
   pointer-events: none;
@@ -1511,10 +1612,10 @@ img {
 .about-hero__title {
   max-width: 985px;
   font-size: 48px;
-  font-family: 'Rockwell Extra Bold', 'Rockwell', 'Georgia', serif;
+  font-family: "Rockwell Extra Bold", "Rockwell", "Georgia", serif;
   font-weight: 800;
   line-height: 52px;
-  color: #FFF;
+  color: #fff;
   margin-bottom: 26px;
 }
 .about-hero__line {
@@ -1524,15 +1625,21 @@ img {
 .about-hero__desc {
   max-width: 760px;
   font-size: 17px;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-weight: 400;
   line-height: 30.6px;
-  color: #FFF;
+  color: #fff;
   margin: 0;
 }
 
 .about-theology {
-  background: #FFF;
+  background: #fff;
   padding: 0;
 }
 .about-theology__inner {
@@ -1547,8 +1654,8 @@ img {
   box-sizing: border-box;
 }
 .about-theology__title {
-  color: #0A1628;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  color: #0a1628;
+  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 800;
@@ -1558,8 +1665,8 @@ img {
 .about-theology__highlight {
   display: inline-block;
   white-space: nowrap;
-  background: #E2FF54;
-  color: #0A1628;
+  background: #e2ff54;
+  color: #0a1628;
   padding: 2px 8px 4px 8px;
   border-radius: 4px;
   box-decoration-break: clone;
@@ -1567,7 +1674,7 @@ img {
 }
 .about-theology__p {
   color: #475569;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -1597,7 +1704,7 @@ img {
   align-self: stretch;
   justify-self: stretch;
   border-radius: 6px;
-  background: #0A1628;
+  background: #0a1628;
   grid-row: span 1;
   grid-column: span 1;
   box-sizing: border-box;
@@ -1607,7 +1714,7 @@ img {
 .about-stats__num {
   display: block;
   font-size: 36px;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
   font-weight: 800;
   color: var(--accent);
   line-height: 1.2;
@@ -1615,7 +1722,7 @@ img {
 }
 .about-stats__label {
   font-size: 13px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--text-secondary);
   font-weight: 500;
   margin: 0;
@@ -1631,8 +1738,8 @@ img {
   max-width: none;
   min-height: 760px;
   margin: 0;
-  border-top: 0.8px solid rgba(201, 168, 76, 0.10);
-  background: #070E1A;
+  border-top: 0.8px solid rgba(201, 168, 76, 0.1);
+  background: #070e1a;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -1666,7 +1773,7 @@ img {
   height: 340px;
   border-radius: 10px;
   overflow: hidden;
-  background: rgba(255,255,255,0.06);
+  background: rgba(255, 255, 255, 0.06);
   margin-bottom: 28px;
 }
 .about-profile__image {
@@ -1676,19 +1783,25 @@ img {
 }
 .about-profile__eyebrow {
   display: block;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 11px;
   font-style: normal;
   font-weight: 600;
   line-height: 16.5px;
   letter-spacing: 2.2px;
   text-transform: uppercase;
-  color: #E2FF54;
+  color: #e2ff54;
   margin-bottom: 10px;
 }
 .about-profile__name {
-  color: #FFF;
-  font-family: 'Playfair Display', serif;
+  color: #fff;
+  font-family: "Playfair Display", serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -1696,8 +1809,14 @@ img {
   margin-bottom: 4px;
 }
 .about-profile__roles {
-  color: #E2FF54;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #e2ff54;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 600;
@@ -1719,33 +1838,39 @@ img {
   border-radius: 20px;
   border: 1px solid rgba(201, 168, 76, 0.25);
   background: rgba(201, 168, 76, 0.08);
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 11px;
   font-style: normal;
   font-weight: 500;
   line-height: 16.5px;
   letter-spacing: 0.66px;
-  color: #C9A84C;
+  color: #c9a84c;
 }
 /* Right column */
 .about-profile__quote {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 15px;
   font-style: italic;
   font-weight: 400;
   line-height: 26px;
-  color: rgba(255, 255, 255, 0.70);
+  color: rgba(255, 255, 255, 0.7);
   margin: 0 0 28px;
   padding: 0;
   border: none;
 }
 .about-profile__bio {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 15px;
   font-style: italic;
   font-weight: 400;
   line-height: 26px;
-  color: rgba(255, 255, 255, 0.70);
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 32px;
 }
 .about-profile__creds {
@@ -1759,12 +1884,18 @@ img {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 21px;
-  color: #CBD5E1;
+  color: #cbd5e1;
   padding: 10px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
@@ -1779,7 +1910,7 @@ img {
 .about-board {
   position: relative;
   background-color: var(--dark-primary);
-  background-image: url('../images/ssb-bg.png');
+  background-image: url("../images/ssb-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1794,15 +1925,21 @@ img {
 }
 .about-board__title {
   font-size: 34px;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
   font-weight: 800;
   color: var(--white);
   margin-bottom: 16px;
 }
 .about-board__intro {
-  color: #64748B;
+  color: #64748b;
   text-align: center;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -1837,8 +1974,8 @@ img {
   margin-bottom: 16px;
 }
 .about-board__name {
-  color: #FFF;
-  font-family: 'Playfair Display', serif;
+  color: #fff;
+  font-family: "Playfair Display", serif;
   font-size: 19px;
   font-style: normal;
   font-weight: 700;
@@ -1846,8 +1983,14 @@ img {
   margin-bottom: 4px;
 }
 .about-board__role {
-  color: #C9A84C;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #c9a84c;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -1862,8 +2005,14 @@ img {
 
 /* Card text: first desc line = qualifications, second = main paragraph */
 .about-board__card p.about-board__desc:nth-of-type(2) {
-  color: #94A3B8;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #94a3b8;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 13px;
   font-style: italic;
   font-weight: 400;
@@ -1871,8 +2020,14 @@ img {
   margin: 0 0 14px;
 }
 .about-board__card p.about-board__desc:nth-of-type(3) {
-  color: #64748B;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #64748b;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -1892,7 +2047,7 @@ img {
 }
 .about-testimonials__title {
   font-size: 34px;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
   font-weight: 800;
   color: var(--dark-primary);
   margin-bottom: 48px;
@@ -1915,14 +2070,14 @@ img {
   position: absolute;
   top: 16px;
   left: 18px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 32px;
   line-height: 1;
   color: rgba(201, 168, 76, 0.28);
 }
 .about-testimonial__quote {
   color: #334155;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
@@ -1930,8 +2085,14 @@ img {
   margin: 18px 0 18px;
 }
 .about-testimonial__author {
-  color: #0A1628;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #0a1628;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 600;
@@ -1939,8 +2100,14 @@ img {
   margin: 0;
 }
 .about-testimonial__country {
-  color: #C9A84C;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #c9a84c;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -1963,9 +2130,9 @@ img {
   z-index: 2;
 }
 .about-partner__title {
-  color: #0A1628;
+  color: #0a1628;
   text-align: center;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
   font-size: 34px;
   font-style: normal;
   font-weight: 800;
@@ -1974,7 +2141,7 @@ img {
 }
 .about-partner__highlight {
   display: inline-block;
-  background: #E2FF54;
+  background: #e2ff54;
   border-radius: 0;
   padding: 0 10px;
 }
@@ -1986,7 +2153,13 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 0;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -2003,7 +2176,11 @@ img {
   bottom: -60px;
   width: 320px;
   height: 320px;
-  background: radial-gradient(circle, rgba(226, 255, 84, 0.25) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(226, 255, 84, 0.25) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   pointer-events: none;
 }
@@ -2013,8 +2190,8 @@ img {
   z-index: 2;
 }
 .btn--case-studies-cta {
-  background: #E2FF54 !important;
-  color: #0A1628 !important;
+  background: #e2ff54 !important;
+  color: #0a1628 !important;
   display: inline-flex;
   padding: 13.6px 32.538px 14.4px 32px;
   justify-content: center;
@@ -2036,11 +2213,25 @@ img {
 }
 
 @media (max-width: 900px) {
-  .about-theology__inner { grid-template-columns: 1fr; }
-  .about-profile__inner { grid-template-columns: 1fr; text-align: center; padding-left: 24px; padding-right: 24px; }
-  .about-profile__image-wrap { margin-left: auto; margin-right: auto; }
-  .about-board__grid { grid-template-columns: 1fr; }
-  .about-testimonials__grid { grid-template-columns: 1fr; }
+  .about-theology__inner {
+    grid-template-columns: 1fr;
+  }
+  .about-profile__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .about-profile__image-wrap {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-board__grid {
+    grid-template-columns: 1fr;
+  }
+  .about-testimonials__grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ========================================
@@ -2077,12 +2268,12 @@ img {
 }
 .lexi-hero__eyebrow {
   display: block;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 2.2px;
   text-transform: uppercase;
-  color: #E2FF54;
+  color: #e2ff54;
   /* Slightly left of frame content so eyebrow sits a bit backward vs heading block */
   max-width: 1010px;
   margin: 0 auto 18px;
@@ -2095,7 +2286,7 @@ img {
   height: auto;
   min-height: 325px;
   border-radius: 35px;
-  background: rgba(217, 217, 217, 0.20);
+  background: rgba(217, 217, 217, 0.2);
   padding: 56px 64px;
   display: flex;
   flex-direction: column;
@@ -2105,8 +2296,8 @@ img {
 .lexi-hero__title {
   width: 825.866px;
   max-width: 100%;
-  color: #FFF;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  color: #fff;
+  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
   font-size: 44.008px;
   font-style: normal;
   font-weight: 800;
@@ -2119,8 +2310,8 @@ img {
 .lexi-hero__desc {
   width: 702px;
   max-width: 100%;
-  color: #FFF;
-  font-family: 'Inter', system-ui, sans-serif;
+  color: #fff;
+  font-family: "Inter", system-ui, sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
@@ -2147,7 +2338,9 @@ img {
   box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.04);
   overflow: hidden;
   backdrop-filter: blur(1px);
-  transition: background 0.2s, border-color 0.2s;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
 }
 .lexi-service-card:hover {
   background: rgba(6, 17, 30, 0.36);
@@ -2188,7 +2381,7 @@ img {
 }
 .lexi-service-card__num {
   color: #475569;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   font-size: 10px;
   font-style: normal;
   font-weight: 600;
@@ -2201,7 +2394,7 @@ img {
 }
 .lexi-service-card__tag {
   color: #475569;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   font-size: 10px;
   font-style: normal;
   font-weight: 600;
@@ -2213,8 +2406,8 @@ img {
   text-overflow: ellipsis;
 }
 .lexi-service-card__title {
-  color: #CBD5E1;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  color: #cbd5e1;
+  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
   font-size: 21px;
   font-style: normal;
   font-weight: 800;
@@ -2230,8 +2423,8 @@ img {
 .lexi-cta {
   width: 100%;
   min-height: 400px;
-  border-top: 0.8px solid rgba(201, 168, 76, 0.10);
-  background: #FFF;
+  border-top: 0.8px solid rgba(201, 168, 76, 0.1);
+  background: #fff;
   padding: 0;
 }
 .lexi-cta__inner {
@@ -2267,8 +2460,8 @@ img {
   object-fit: contain;
 }
 .lexi-cta__title {
-  color: #0A1628;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  color: #0a1628;
+  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
   font-size: 34px;
   font-style: normal;
   font-weight: 800;
@@ -2277,9 +2470,9 @@ img {
   max-width: 520px;
 }
 .lexi-cta__desc {
-  color: #64748B;
+  color: #64748b;
   text-align: center;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -2294,10 +2487,10 @@ img {
   align-items: center;
   gap: 7.325px;
   border-radius: 4px;
-  background: #E2FF54;
-  color: #070E1A;
+  background: #e2ff54;
+  color: #070e1a;
   text-align: center;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -2386,17 +2579,17 @@ img {
 }
 .contact-hero__eyebrow {
   display: block;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 2.2px;
   text-transform: uppercase;
-  color: #E2FF54;
+  color: #e2ff54;
   margin-bottom: 24px;
 }
 .contact-hero__title {
-  color: #FFF;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  color: #fff;
+  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 800;
@@ -2404,7 +2597,7 @@ img {
   margin-bottom: 24px;
 }
 .contact-hero__desc {
-  color: #94A3B8;
+  color: #94a3b8;
   font-family: Inter, system-ui, sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -2428,7 +2621,7 @@ img {
   position: absolute;
   width: 250px;
   height: 250px;
-  background: #C9A84C;
+  background: #c9a84c;
   filter: blur(120px);
   opacity: 0.15;
   border-radius: 50%;
@@ -2466,16 +2659,30 @@ img {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @keyframes spin-reverse {
-  0% { transform: rotate(360deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 @keyframes pulse-star {
-  0% { filter: drop-shadow(0 0 8px rgba(226, 255, 84, 0.1)); transform: scale(0.98); }
-  100% { filter: drop-shadow(0 0 16px rgba(226, 255, 84, 0.4)); transform: scale(1.02); }
+  0% {
+    filter: drop-shadow(0 0 8px rgba(226, 255, 84, 0.1));
+    transform: scale(0.98);
+  }
+  100% {
+    filter: drop-shadow(0 0 16px rgba(226, 255, 84, 0.4));
+    transform: scale(1.02);
+  }
 }
 
 /* ── Main Content ── */
@@ -2483,7 +2690,7 @@ img {
 .contact-main {
   position: relative;
   width: 100%;
-  background: #002E36;
+  background: #002e36;
   border-bottom: 0.8px solid rgba(201, 168, 76, 0.15);
   padding: 60px 0 100px;
   z-index: 1;
@@ -2516,11 +2723,11 @@ img {
 .contact-info__diamond {
   width: 6px;
   height: 6px;
-  background: #C9A84C;
+  background: #c9a84c;
   transform: rotate(45deg);
 }
 .contact-info__title {
-  color: #FFF;
+  color: #fff;
   font-family: "Playfair Display", serif;
   font-size: 29.16px;
   font-style: normal;
@@ -2551,7 +2758,7 @@ img {
 }
 .contact-info__label {
   display: block;
-  color: #C9A84C;
+  color: #c9a84c;
   font-family: Inter, system-ui, sans-serif;
   font-size: 11px;
   font-style: normal;
@@ -2562,7 +2769,7 @@ img {
   margin-bottom: 6px;
 }
 .contact-info__value {
-  color: #E2E8F0;
+  color: #e2e8f0;
   font-size: 14px;
   line-height: 1.6;
 }
@@ -2574,7 +2781,7 @@ img {
   border: 1px solid rgba(148, 163, 184, 0.1);
 }
 .contact-standards__title {
-  color: #C9A84C;
+  color: #c9a84c;
   font-family: Inter, system-ui, sans-serif;
   font-size: 11px;
   font-style: normal;
@@ -2593,7 +2800,7 @@ img {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #94A3B8;
+  color: #94a3b8;
   font-family: Inter, system-ui, sans-serif;
   font-size: 13px;
   font-style: normal;
@@ -2618,7 +2825,7 @@ img {
   padding: 0.8px 0.8px 32.8px 0.8px;
   border-radius: 8px;
   border: 0.8px solid rgba(201, 168, 76, 0.15);
-  background: #0A1628;
+  background: #0a1628;
   box-shadow: 0 4px 9.4px 0 rgba(255, 255, 255, 0.25);
 }
 .contact-form-wrapper .contact-form__title,
@@ -2641,7 +2848,7 @@ img {
   margin-bottom: 0;
 }
 .contact-form__title {
-  color: #FFF;
+  color: #fff;
   font-family: "Rockwell Extra Bold", Rockwell, Georgia, serif;
   font-size: 22px;
   font-style: normal;
@@ -2650,7 +2857,7 @@ img {
   margin-bottom: 12px;
 }
 .contact-form__desc {
-  color: #64748B;
+  color: #64748b;
   font-family: Inter, system-ui, sans-serif;
   font-size: 13px;
   font-style: normal;
@@ -2686,7 +2893,7 @@ img {
   gap: 8px;
 }
 .contact-form__label {
-  color: #64748B;
+  color: #64748b;
   font-family: Inter, system-ui, sans-serif;
   font-size: 13px;
   font-style: normal;
@@ -2698,8 +2905,8 @@ img {
   border: 1px solid rgba(148, 163, 184, 0.2);
   border-radius: 6px;
   padding: 14px 16px;
-  color: #FFF;
-  font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-family: "Inter", sans-serif;
   font-size: 16px; /* 16px+ reduces iOS zoom on focus */
   width: 100%;
   max-width: 100%;
@@ -2708,7 +2915,7 @@ img {
 }
 .contact-form__input:focus {
   outline: none;
-  border-color: #E2FF54;
+  border-color: #e2ff54;
 }
 /* Executive Onboarding Form placeholders (contact.html) */
 .contact-form__input::placeholder {
@@ -2727,14 +2934,14 @@ img {
   position: relative;
 }
 .contact-form__select-wrapper::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid #94A3B8;
+  border-top: 5px solid #94a3b8;
   pointer-events: none;
 }
 .contact-form__textarea {
@@ -2748,8 +2955,8 @@ img {
   gap: 8px;
   width: 100%;
   box-sizing: border-box;
-  background: #E2FF54;
-  color: #070E1A;
+  background: #e2ff54;
+  color: #070e1a;
   text-align: center;
   font-family: Inter, system-ui, sans-serif;
   font-size: 14px;
@@ -2768,13 +2975,13 @@ img {
   background: #d4f04c;
 }
 .contact-form__disclaimer {
-  color: #4A5565;
+  color: #4a5565;
   font-size: 11px;
   text-align: center;
   line-height: 1.6;
 }
 .contact-form__success {
-  color: #E2FF54;
+  color: #e2ff54;
   font-family: Inter, system-ui, sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -2852,7 +3059,7 @@ img {
    ======================================== */
 .page-leadership {
   background-color: var(--dark-primary);
-  background-image: url('../images/contact-main-bg.png');
+  background-image: url("../images/contact-main-bg.png");
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
@@ -2881,7 +3088,7 @@ img {
   width: 2000px;
   max-width: 100%;
   height: 371px;
-  background-image: url('../images/leadership-hero-bg.png');
+  background-image: url("../images/leadership-hero-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2901,7 +3108,7 @@ img {
 }
 .leadership-hero__eyebrow {
   display: block;
-  color: #C9A84C;
+  color: #c9a84c;
   font-family: Inter, system-ui, sans-serif;
   font-size: 11px;
   font-style: normal;
@@ -2912,7 +3119,7 @@ img {
   margin-bottom: 16px;
 }
 .leadership-hero__title {
-  color: #FFF;
+  color: #fff;
   font-family: "Rockwell Extra Bold", Rockwell, Georgia, serif;
   font-size: 52.488px;
   font-style: normal;
@@ -2921,10 +3128,10 @@ img {
   margin-bottom: 24px;
 }
 .leadership-hero__title .text-accent {
-  color: #E2FF54;
+  color: #e2ff54;
 }
 .leadership-hero__desc {
-  color: #94A3B8;
+  color: #94a3b8;
   font-family: Inter, system-ui, sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -2945,6 +3152,20 @@ img {
   margin: 0 auto;
   padding: 0 24px;
 }
+.leadership-process__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+.leadership-process__subtitle {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 700px;
+  margin-bottom: 32px;
+}
 .process-steps {
   display: flex;
   flex-direction: column;
@@ -2959,7 +3180,9 @@ img {
   background: rgba(13, 27, 42, 0.4);
   border: 1px solid rgba(148, 163, 184, 0.1);
   border-radius: 8px;
-  transition: background 0.3s, border-color 0.3s;
+  transition:
+    background 0.3s,
+    border-color 0.3s;
 }
 .process-step:hover {
   background: rgba(13, 27, 42, 0.8);
@@ -2989,16 +3212,16 @@ img {
   gap: 4px;
 }
 .process-step__phase {
-  color: #C9A84C;
-  font-family: 'Inter', system-ui, sans-serif;
+  color: #c9a84c;
+  font-family: "Inter", system-ui, sans-serif;
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 .process-step__title {
-  color: #FFF;
-  font-family: 'Rockwell', 'Rockwell Extra Bold', 'Georgia', serif;
+  color: #fff;
+  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
   font-size: 20px;
   font-weight: 800;
 }
@@ -3044,7 +3267,7 @@ img {
   box-sizing: border-box;
   border-radius: 8px;
   border: 0.8px solid rgba(201, 168, 76, 0.2);
-  background: #0A1628;
+  background: #0a1628;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
 }
 .ask-form-wrapper .ask-form__title,
@@ -3070,7 +3293,7 @@ img {
   max-width: none;
 }
 .ask-form__title {
-  color: #FFF;
+  color: #fff;
   font-family: "Playfair Display", serif;
   font-size: 34.454px;
   font-style: normal;
@@ -3079,7 +3302,7 @@ img {
   margin-bottom: 0;
 }
 .ask-form__desc {
-  color: #64748B;
+  color: #64748b;
   font-family: Inter, system-ui, sans-serif;
   font-size: 14.769px;
   font-style: normal;
@@ -3105,7 +3328,7 @@ img {
   gap: 8px;
 }
 .ask-form__label {
-  color: #94A3B8;
+  color: #94a3b8;
   font-family: Inter, system-ui, sans-serif;
   font-size: 11.816px;
   font-style: normal;
@@ -3119,14 +3342,14 @@ img {
   border: 1px solid rgba(148, 163, 184, 0.2);
   border-radius: 6px;
   padding: 14px 16px;
-  color: #FFF;
-  font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   transition: border-color 0.2s;
 }
 .ask-form__input:focus {
   outline: none;
-  border-color: #E2FF54;
+  border-color: #e2ff54;
 }
 .ask-form__input::placeholder {
   color: rgba(226, 232, 240, 0.5);
@@ -3144,14 +3367,14 @@ img {
   position: relative;
 }
 .ask-form__select-wrapper::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid #94A3B8;
+  border-top: 5px solid #94a3b8;
   pointer-events: none;
 }
 .ask-form__textarea {
@@ -3183,7 +3406,7 @@ img {
   line-height: 18.905px; /* 160% */
 }
 .ask-form__disclaimer a {
-  color: #C9A84C;
+  color: #c9a84c;
   font-family: Inter, system-ui, sans-serif;
   font-size: 11.816px;
   font-style: normal;
@@ -3204,8 +3427,8 @@ img {
   box-sizing: border-box;
   border: none;
   border-radius: 3.939px;
-  background: #E2FF54;
-  color: #070E1A;
+  background: #e2ff54;
+  color: #070e1a;
   text-align: center;
   font-family: Inter, system-ui, sans-serif;
   font-size: 13.785px;
@@ -3281,7 +3504,7 @@ img {
   overflow: hidden;
   pointer-events: none;
   background-color: #000;
-  background-image: url('../images/academy-building-banner.png');
+  background-image: url("../images/academy-building-banner.png");
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -3289,10 +3512,14 @@ img {
   opacity: 0.65;
 }
 .academy-hero__bg-frame::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(10, 22, 40, 0.35) 0%, rgba(10, 22, 40, 0.75) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 22, 40, 0.35) 0%,
+    rgba(10, 22, 40, 0.75) 100%
+  );
   pointer-events: none;
 }
 @media (max-width: 600px) {
@@ -3312,7 +3539,7 @@ img {
 }
 .academy-hero__eyebrow {
   display: block;
-  color: #E2FF54;
+  color: #e2ff54;
   font-family: Inter, sans-serif;
   font-size: 11px;
   font-weight: 600;
@@ -3321,7 +3548,7 @@ img {
   margin-bottom: 16px;
 }
 .academy-hero__title {
-  color: #FFF;
+  color: #fff;
   font-family: "Rockwell Extra Bold", Rockwell, Georgia, serif;
   font-size: 32.67px;
   font-style: normal;
@@ -3336,7 +3563,7 @@ img {
   }
 }
 .academy-hero__title-accent {
-  color: #E2FF54;
+  color: #e2ff54;
   font-family: "Rockwell Extra Bold", Rockwell, Georgia, serif;
   font-size: 32.67px;
   font-style: normal;
@@ -3344,7 +3571,7 @@ img {
   line-height: 37.571px;
 }
 .academy-hero__desc {
-  color: #94A3B8;
+  color: #94a3b8;
   font-family: Montserrat, sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -3371,7 +3598,7 @@ img {
 }
 .academy-stats__num {
   display: block;
-  color: #E2FF54;
+  color: #e2ff54;
   text-align: center;
   font-family: "Playfair Display", Georgia, serif;
   font-size: 34.992px;
@@ -3416,7 +3643,7 @@ img {
   margin-bottom: 28px;
 }
 .academy-partners__title-main {
-  color: #E2FF54;
+  color: #e2ff54;
   font-family: Montserrat, sans-serif;
   font-size: 21.667px;
   font-style: normal;
@@ -3426,7 +3653,7 @@ img {
   text-transform: uppercase;
 }
 .academy-partners__title-note {
-  color: #E2FF54;
+  color: #e2ff54;
   font-family: Montserrat, sans-serif;
   font-size: 21.667px;
   font-style: italic;
@@ -3465,7 +3692,7 @@ img {
   border: 1px solid rgba(148, 163, 184, 0.25);
   border-radius: 4px;
   background: rgba(7, 14, 26, 0.6);
-  color: #64748B;
+  color: #64748b;
   font-family: Inter, sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -3477,7 +3704,7 @@ img {
 
 /* Featured programs */
 .academy-programs {
-  background: #0D1B2A;
+  background: #0d1b2a;
   padding: 80px 0;
 }
 .academy-programs__inner {
@@ -3486,7 +3713,7 @@ img {
   padding: 0 24px;
 }
 .academy-programs__heading {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Rockwell Extra Bold", Rockwell, Georgia, serif;
   font-size: 40px;
@@ -3536,7 +3763,7 @@ img {
   justify-content: flex-end;
   gap: 6px;
   width: 100%;
-  color: #C9A84C;
+  color: #c9a84c;
   text-align: right;
   font-family: Inter, sans-serif;
   font-size: 10px;
@@ -3547,13 +3774,13 @@ img {
   text-transform: uppercase;
 }
 .academy-card__impact-icon {
-  color: #C9A84C;
+  color: #c9a84c;
   flex-shrink: 0;
 }
 .academy-card__impact-desc {
   margin: 0;
   width: 100%;
-  color: #94A3B8;
+  color: #94a3b8;
   text-align: right;
   font-family: Inter, sans-serif;
   font-size: 12px;
@@ -3593,7 +3820,7 @@ img {
   padding: 4px 12px;
   border: 1px solid rgba(201, 168, 76, 0.35);
   border-radius: 4px;
-  color: #C9A84C;
+  color: #c9a84c;
   font-family: Inter, sans-serif;
   font-size: 10px;
   font-style: normal;
@@ -3603,7 +3830,7 @@ img {
   text-transform: uppercase;
 }
 .academy-card__title {
-  color: #FFF;
+  color: #fff;
   font-family: "Rockwell Extra Bold", Rockwell, Georgia, serif;
   font-size: 20px;
   font-style: normal;
@@ -3618,7 +3845,7 @@ img {
   margin-bottom: 24px;
 }
 .academy-card__col-title {
-  color: #C9A84C;
+  color: #c9a84c;
   font-family: Inter, sans-serif;
   font-size: 10px;
   font-style: normal;
@@ -3629,7 +3856,7 @@ img {
   margin-bottom: 10px;
 }
 .academy-card__col-text {
-  color: #CBD5E1;
+  color: #cbd5e1;
   font-family: Inter, sans-serif;
   font-size: 14px;
   line-height: 1.65;
@@ -3647,14 +3874,14 @@ img {
   padding: 6px 12px;
   border: 1px solid rgba(148, 163, 184, 0.2);
   border-radius: 20px;
-  color: #94A3B8;
+  color: #94a3b8;
   font-family: Inter, sans-serif;
   font-size: 11px;
 }
 
 /* Ready section — white band */
 .academy-ready {
-  background: #FFF;
+  background: #fff;
   padding: 80px 0;
 }
 .academy-ready__inner {
@@ -3670,7 +3897,7 @@ img {
   margin-bottom: 20px;
 }
 .academy-ready__title-first {
-  color: #0A1628;
+  color: #0a1628;
   font-family: "Rockwell Extra Bold", Rockwell, Georgia, serif;
   font-size: 23.506px;
   font-style: normal;
@@ -3681,8 +3908,8 @@ img {
   display: inline-block;
   padding: 4px 14px 6px;
   border-radius: 14px;
-  background: #E2FF54;
-  color: #0A1628;
+  background: #e2ff54;
+  color: #0a1628;
   font-family: "Rockwell Extra Bold", Rockwell, Georgia, serif;
   font-size: 36px;
   font-style: normal;
@@ -3690,7 +3917,7 @@ img {
   line-height: 44px;
 }
 .academy-ready__desc {
-  color: #64748B;
+  color: #64748b;
   font-family: Inter, sans-serif;
   font-size: 15px;
   font-style: normal;
@@ -3704,8 +3931,8 @@ img {
   justify-content: center;
   align-items: center;
   gap: 6.45px;
-  background: #E2FF54;
-  color: #070E1A;
+  background: #e2ff54;
+  color: #070e1a;
   text-align: center;
   font-family: Inter, sans-serif;
   font-size: 14px;
@@ -3736,8 +3963,12 @@ img {
 }
 
 @media (max-width: 900px) {
-  .academy-stats { flex-direction: column; }
-  .academy-stats__divider { display: none; }
+  .academy-stats {
+    flex-direction: column;
+  }
+  .academy-stats__divider {
+    display: none;
+  }
   .academy-card__header {
     flex-direction: column;
     align-items: stretch;
@@ -3747,8 +3978,12 @@ img {
     height: auto;
     min-height: 80.6px;
   }
-  .academy-card__cols { grid-template-columns: 1fr; }
-  .academy-ready__inner { grid-template-columns: 1fr; }
+  .academy-card__cols {
+    grid-template-columns: 1fr;
+  }
+  .academy-ready__inner {
+    grid-template-columns: 1fr;
+  }
   .academy-ready__visual-img {
     width: 100%;
     max-width: 534.597px;

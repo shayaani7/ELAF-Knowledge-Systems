@@ -1,420 +1,675 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ELAF Knowledge Systems</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- ===== HEADER ===== -->
-  <header class="header">
-    <div class="header__inner">
-      <div class="logo">
-        <span class="logo__name">ELAF</span>
-        <span class="logo__sub">Knowledge Systems</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELAF Knowledge Systems</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+      <div class="header__inner">
+        <div class="logo">
+          <span class="logo__name">ELAF</span>
+          <span class="logo__sub">Knowledge Systems</span>
+        </div>
+        <nav class="nav" id="nav">
+          <a href="#home" class="nav__link nav__link--active">Home</a>
+          <a href="about.html" class="nav__link">Elaf Shariah Advisory</a>
+          <a href="lexisync.html" class="nav__link">Elaf LexiSync</a>
+          <a href="academy.html" class="nav__link">Elaf Digital Academy</a>
+          <a href="leadership.html" class="nav__link"
+            >Leadership &amp; Management</a
+          >
+        </nav>
+        <a href="contact.html" class="btn btn--primary"
+          >Book Executive Consultation</a
+        >
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <nav class="nav" id="nav">
-        <a href="#home" class="nav__link nav__link--active">Home</a>
-        <a href="about.html" class="nav__link">Elaf Shariah Advisory</a>
-        <a href="lexisync.html" class="nav__link">Elaf LexiSync</a>
-        <a href="academy.html" class="nav__link">Elaf Digital Academy</a>
-        <a href="leadership.html" class="nav__link">Leadership &amp; Management</a>
-      </nav>
-      <a href="contact.html" class="btn btn--primary">Book Executive Consultation</a>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
+    </header>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="home">
-    <div class="hero__bg-layers">
-      <img src="images/aurora-bg-1.png" alt="" class="hero__aurora hero__aurora--1">
-      <img src="images/aurora-bg-2.png" alt="" class="hero__aurora hero__aurora--2">
-      <img src="images/hero-grid-bg.png" alt="" class="hero__grid-img">
-      <div class="hero__grid-lines">
-        <div class="hero__cell-glow" style="left:192px;top:192px"></div>
-        <div class="hero__cell-glow" style="left:672px;top:96px"></div>
-        <div class="hero__cell-glow" style="left:480px;top:384px"></div>
-        <div class="hero__cell-glow" style="left:864px;top:288px"></div>
-        <div class="hero__cell-glow" style="left:96px;top:480px"></div>
-        <div class="hero__cell-glow" style="left:576px;top:576px"></div>
-        <div class="hero__cell-glow" style="left:768px;top:480px"></div>
-        <div class="hero__cell-glow" style="left:288px;top:672px"></div>
-        <div class="hero__cell-glow" style="left:960px;top:576px"></div>
-        <div class="hero__cell-glow" style="left:384px;top:96px"></div>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero__bg-layers">
+        <img
+          src="images/aurora-bg-1.png"
+          alt=""
+          class="hero__aurora hero__aurora--1"
+        />
+        <img
+          src="images/aurora-bg-2.png"
+          alt=""
+          class="hero__aurora hero__aurora--2"
+        />
+        <img src="images/hero-grid-bg.png" alt="" class="hero__grid-img" />
+        <div class="hero__grid-lines">
+          <div class="hero__cell-glow" style="left: 192px; top: 192px"></div>
+          <div class="hero__cell-glow" style="left: 672px; top: 96px"></div>
+          <div class="hero__cell-glow" style="left: 480px; top: 384px"></div>
+          <div class="hero__cell-glow" style="left: 864px; top: 288px"></div>
+          <div class="hero__cell-glow" style="left: 96px; top: 480px"></div>
+          <div class="hero__cell-glow" style="left: 576px; top: 576px"></div>
+          <div class="hero__cell-glow" style="left: 768px; top: 480px"></div>
+          <div class="hero__cell-glow" style="left: 288px; top: 672px"></div>
+          <div class="hero__cell-glow" style="left: 960px; top: 576px"></div>
+          <div class="hero__cell-glow" style="left: 384px; top: 96px"></div>
+        </div>
+        <div class="hero__gradient-overlay"></div>
       </div>
-      <div class="hero__gradient-overlay"></div>
-    </div>
-    <div class="hero__content">
-      <div class="hero__badge">
-        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 6.5L4.5 10L11 2" stroke="#C9A84C" stroke-width="1.5"/></svg>
-        <span>AAOIFI Certified · Globally Recognized</span>
-      </div>
+      <div class="hero__content">
+        <div class="hero__badge">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M1 6.5L4.5 10L11 2" stroke="#C9A84C" stroke-width="1.5" />
+          </svg>
+          <span>AAOIFI Certified · Globally Recognized</span>
+        </div>
 
-      <h1 class="hero__title">
-        <span class="hero__line">Bridging Classical Authority</span>
-        <span class="hero__line">with <span class="text-accent">Global Digital</span></span>
-        <span class="hero__line">Infrastructure.</span>
-      </h1>
+        <h1 class="hero__title">
+          <span class="hero__line">Bridging Classical Authority</span>
+          <span class="hero__line"
+            >with <span class="text-accent">Global Digital</span></span
+          >
+          <span class="hero__line">Infrastructure.</span>
+        </h1>
 
-      <p class="hero__desc">
-        Elaf Knowledge Systems is a premier corporate consortium engineering Tier-1 Shariah advisory, Islamic financial compliance, enterprise-grade linguistic data localization, and authentic digital learning architectures for the global market.
-      </p>
-
-      <div class="hero__actions">
-        <a href="#services" class="btn btn--primary btn--lg">
-          Explore Advisory Services
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3.33L12.67 8L8 12.67" stroke="#1A1A1A" stroke-width="1.33"/></svg>
-        </a>
-        <a href="academy.html" class="btn btn--outline-white btn--lg">View Global Case Studies</a>
-        <a href="#" class="btn btn--outline-gold btn--lg">Ask the Advisor</a>
-      </div>
-
-      <div class="hero__credentials">
-        <div class="hero__credential">
-          <img src="images/check-circle-cred.png" alt="" class="hero__credential-icon">
-          <span>AAOIFI Certified Leadership</span>
-          <span class="hero__credential-sep">|</span>
-        </div>
-        <div class="hero__credential">
-          <img src="images/check-circle-cred.png" alt="" class="hero__credential-icon">
-          <span>Top 1% Global Expert</span>
-          <span class="hero__credential-sep">|</span>
-        </div>
-        <div class="hero__credential">
-          <img src="images/check-circle-cred.png" alt="" class="hero__credential-icon">
-          <span>15+ Years Experience</span>
-          <span class="hero__credential-sep">|</span>
-        </div>
-        <div class="hero__credential">
-          <img src="images/check-circle-cred.png" alt="" class="hero__credential-icon">
-          <span>200+ Global Clients</span>
-          <span class="hero__credential-sep">|</span>
-        </div>
-        <div class="hero__credential">
-          <img src="images/check-circle-cred.png" alt="" class="hero__credential-icon">
-          <span>100+ Financial Models Engineered</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== INDUSTRY DISCONNECT ===== -->
-  <section class="disconnect" id="about">
-    <svg class="disconnect__curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1151 203" fill="none" preserveAspectRatio="none"><path d="M841.995 0H309.005C295.165 0 281.655 4.22303 270.279 12.105L169.568 81.8815C152.839 93.4725 132.97 99.6829 112.617 99.6829H0V203H1151V99.6829H1038.38C1018.03 99.6829 998.161 93.4725 981.432 81.8814L880.721 12.105C869.345 4.22302 855.835 0 841.995 0Z" fill="white"/></svg>
-    <div class="disconnect__inner">
-      <h2 class="disconnect__title">
-        Why Institutions Fail in Ethical<br>
-        <span class="text-lime">Finance and Global Expansion.</span>
-      </h2>
-      <p class="disconnect__subtitle">
-        Global organizations are currently facing a modern institutional challenge, often struggling with one of three critical structural gaps:
-      </p>
-
-      <div class="disconnect__cards">
-        <div class="problem-card">
-          <div class="problem-card__num">1</div>
-          <h3 class="problem-card__title">Theoretical Friction</h3>
-          <p class="problem-card__desc">Static compliance opinions from traditional scholars that lack a viable go-to-market strategy.</p>
-        </div>
-        <div class="problem-card">
-          <div class="problem-card__num">2</div>
-          <h3 class="problem-card__title">Operational Incompatibility</h3>
-          <p class="problem-card__desc">Financial products that appear compliant on paper but cannot be integrated into modern fintech ecosystems or smart contracts.</p>
-        </div>
-        <div class="problem-card">
-          <div class="problem-card__num">3</div>
-          <h3 class="problem-card__title">Governance Gaps</h3>
-          <p class="problem-card__desc">Rapidly scaling digital banks and platforms that lack the rigorous oversight required to satisfy institutional investors and central bank regulators.</p>
-        </div>
-      </div>
-
-      <div class="disconnect__quote">
-        <div class="disconnect__quote-inner">
-          <div class="disconnect__quote-left">
-            <span class="disconnect__quote-tag">The Elaf Solution</span>
-            <blockquote class="disconnect__quote-text">
-              "These gaps create investor hesitation, reputational damage, and lost market share. Elaf Knowledge Systems exists to eliminate these risks at the structural level."
-            </blockquote>
-          </div>
-        </div>
-        <span class="disconnect__quote-mark" aria-hidden="true">”</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== SERVICES ===== -->
-  <section class="services" id="services">
-    <img src="images/engineering-bg.png" alt="" class="services__bg">
-    <div class="services__inner">
-      <div class="services__header">
-        <h2 class="services__title">Strategic Infrastructure Across<br>Three Specialized Divisions.</h2>
-        <p class="services__subtitle">
-          Technology alone cannot build ethical economies. Traditional scholarship alone cannot scale globally. Elaf integrates theology,
-          finance, language technology, and education into one unified operational framework.
+        <p class="hero__desc">
+          Elaf Knowledge Systems is a premier corporate consortium engineering
+          Tier-1 Shariah advisory, Islamic financial compliance,
+          enterprise-grade linguistic data localization, and authentic digital
+          learning architectures for the global market.
         </p>
-      </div>
 
-      <div class="services__grid">
-        <div class="service-card">
-          <div class="service-card__icon">
-            <img src="images/service-icon-01.png" alt="">
-          </div>
-          <span class="service-card__num">01</span>
-          <h3 class="service-card__title">Elaf Shariah Advisory</h3>
-          <div class="service-card__body">
-            <p class="service-card__meta">
-              <span class="service-card__label">Target:</span>
-              Islamic Banks, FinTech, SMEs, Startups, NGOs, and Investment Funds worldwide.
-            </p>
-            <p class="service-card__meta">
-              <span class="service-card__label">What We Do:</span>
-              We design Shariah-compliant financial products (Murabaha, Musharaka, Ijarah, Sukuk), Islamic fintech structures, and institutional Shariah Supervisory Boards. We do not provide abstract opinions; we deliver executable financial architecture.
-            </p>
-          </div>
-          <a href="about.html" class="btn btn--outline-accent service-card__cta">
-            View Service
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4L10 8L6 12" stroke="#E2FF54" stroke-width="1.33"/></svg>
-          </a>
-        </div>
-        <div class="service-card">
-          <div class="service-card__icon">
-            <img src="images/service-icon-02.png" alt="">
-          </div>
-          <span class="service-card__num">02</span>
-          <h3 class="service-card__title">Elaf LexiSync</h3>
-          <div class="service-card__body">
-            <p class="service-card__meta">
-              <span class="service-card__label">Target:</span>
-              Silicon Valley Tech Giants, SaaS, App Developers, Global Enterprises, Legal &amp; HR Departments.
-            </p>
-            <p class="service-card__meta">
-              <span class="service-card__label">What We Do:</span>
-              Enterprise localization and linguistic technology. We support global expansion through continuous software localization, AI &amp; MTPE optimization, RTL UI/UX compliance, and secure legal content management across English, Arabic, Urdu, Pashto, and Persian.
-            </p>
-          </div>
-          <a href="lexisync.html" class="btn btn--outline-accent service-card__cta">
-            View Service
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4L10 8L6 12" stroke="#E2FF54" stroke-width="1.33"/></svg>
-          </a>
-        </div>
-        <div class="service-card">
-          <div class="service-card__icon">
-            <img src="images/service-icon-04.png" alt="">
-          </div>
-          <span class="service-card__num">03</span>
-          <h3 class="service-card__title">Elaf Digital Academy</h3>
-          <div class="service-card__body">
-            <p class="service-card__meta">
-              <span class="service-card__label">Target:</span>
-              EdTech Platforms, Digital Madaris, Islamic Universities, NGOs, and Global Schools.
-            </p>
-            <p class="service-card__meta">
-              <span class="service-card__label">What We Do:</span>
-              Curriculum architecture and institutional learning systems. We design LMS-optimized Islamic finance programs, structured Arabic &amp; Tajwid curricula, and conduct rigorous academic compliance audits.
-            </p>
-          </div>
-          <a href="about.html" class="btn btn--outline-accent service-card__cta">
-            View Service
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4L10 8L6 12" stroke="#E2FF54" stroke-width="1.33"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="services__cta-row">
-        <a href="#" class="btn btn--outline-accent services__cta">
-          View All Services
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4L10 8L6 12" stroke="#E2FF54" stroke-width="1.33"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FRAMEWORK ===== -->
-  <section class="framework" id="framework">
-    <div class="framework__inner">
-      <h2 class="framework__title">A Framework Built for Clarity and Speed.</h2>
-      <p class="framework__subtitle">Our six-phase engagement model ensures rigorous compliance without sacrificing time-to-market.</p>
-
-      <div class="framework__grid">
-        <div class="phase-card">
-          <div class="phase-card__circle">1</div>
-          <span class="phase-card__bg-num">01</span>
-          <h3 class="phase-card__title">Strategic Consultation</h3>
-          <p class="phase-card__desc">Defining your commercial and operational objectives.</p>
-        </div>
-        <div class="phase-card">
-          <div class="phase-card__circle">2</div>
-          <span class="phase-card__bg-num">02</span>
-          <h3 class="phase-card__title">Diagnostic Review</h3>
-          <p class="phase-card__desc">Identifying structural and compliance gaps.</p>
-        </div>
-        <div class="phase-card">
-          <div class="phase-card__circle">3</div>
-          <span class="phase-card__bg-num">03</span>
-          <h3 class="phase-card__title">Shariah Structuring</h3>
-          <p class="phase-card__desc">Engineering the financial model and operational workflow.</p>
-        </div>
-        <div class="phase-card">
-          <div class="phase-card__circle">4</div>
-          <span class="phase-card__bg-num">04</span>
-          <h3 class="phase-card__title">Documentation &amp; Certification</h3>
-          <p class="phase-card__desc">Drafting airtight Islamic contracts and issuing binding rulings.</p>
-        </div>
-        <div class="phase-card">
-          <div class="phase-card__circle">5</div>
-          <span class="phase-card__bg-num">05</span>
-          <h3 class="phase-card__title">Implementation Support</h3>
-          <p class="phase-card__desc">Guiding your development and operations teams through deployment.</p>
-        </div>
-        <div class="phase-card">
-          <div class="phase-card__circle">6</div>
-          <span class="phase-card__bg-num">06</span>
-          <h3 class="phase-card__title">Ongoing Governance</h3>
-          <p class="phase-card__desc">Annual board representation and continuous audit oversight.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CLIENTS ===== -->
-  <section class="clients" id="case-studies">
-    <div class="clients__inner">
-      <span class="clients__tag">Trusted By</span>
-      <h2 class="clients__title">200+ Global Clients Across 6 Continents</h2>
-      <p class="clients__subtitle">USA · UK · UAE · KSA · Canada · Europe · Sub-Saharan Africa</p>
-
-      <div class="clients__logos">
-        <span class="client-logo">EQRAZ</span>
-        <span class="client-logo">Musaffa</span>
-        <span class="client-logo">Malco Energy</span>
-        <span class="client-logo">HTC Global</span>
-        <span class="client-logo">Systemrapid</span>
-        <span class="client-logo">Gulf Capital</span>
-        <span class="client-logo">IFinance Corp</span>
-        <span class="client-logo">AlHalal Bank</span>
-        <span class="client-logo">TakaTech</span>
-        <span class="client-logo">ZakatPay</span>
-        <span class="client-logo">GreenSukuk</span>
-        <span class="client-logo">NoorFund</span>
-      </div>
-
-      <div class="clients__cta-row">
-        <a href="academy.html" class="btn btn--case-studies">View Detailed Case Studies</a>
-      </div>
-
-      <div class="clients__globe">
-        <div class="global-network">
-          <div class="network-ring network-ring--1"></div>
-          <div class="network-ring network-ring--2"></div>
-          <div class="network-ring network-ring--3"></div>
-          <div class="network-core"></div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===== CTA SECTION ===== -->
-  <section class="cta-section">
-    <div class="cta-section__inner">
-      <h2 class="cta-section__title">
-        Build Your Financial Strategy on an<br><span class="text-accent">Unshakable Foundation.</span>
-      </h2>
-      <p class="cta-section__desc">Partner with globally recognized Shariah experts to structure compliant, commercially viable, and regulator-ready financial solutions.</p>
-      <a href="contact.html" class="btn btn--primary btn--lg btn--case-studies-cta">Schedule Executive Consultation</a>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer" id="contact">
-    <div class="footer__inner">
-      <div class="footer__top">
-        <div class="footer__col footer__col--brand">
-          <div class="logo logo--footer">
-            <span class="logo__name logo__name--lg">ELAF</span>
-            <span class="logo__sub">Knowledge Systems</span>
-          </div>
-          <p class="footer__tagline">Bridging Classical Authority with Global Digital Infrastructure.</p>
-          <div class="footer__contact-list">
-            <div class="footer__contact-item">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.33 1.17h9.33v11.67H2.33z" stroke="#C9A84C" stroke-width="1.17"/><circle cx="7" cy="5.25" r="1.75" stroke="#C9A84C" stroke-width="1.17"/></svg>
-              <div>
-                <span>Corporate Hub, Wah Cantt / Rawalpindi,</span>
-                <span>Punjab, Pakistan</span>
-              </div>
-            </div>
-            <div class="footer__contact-item">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1.17" y="2.33" width="11.67" height="9.33" rx="1" stroke="#C9A84C" stroke-width="1.17"/><path d="M1.17 4.08h11.67" stroke="#C9A84C" stroke-width="1.17"/></svg>
-              <span>executive@elafadvisory.com</span>
-            </div>
-            <div class="footer__contact-item">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="5.83" stroke="#C9A84C" stroke-width="1.17"/></svg>
-              <span>+92 300-000-0000 (WhatsApp / Direct)</span>
-            </div>
-            <div class="footer__contact-item">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="5.83" stroke="#C9A84C" stroke-width="1.17"/><path d="M7 3.5V7l2.33 2.33" stroke="#C9A84C" stroke-width="1.17"/></svg>
-              <div>
-                <span>Mon – Sat: 8:00 AM – 5:00 PM (PKT)</span>
-                <span>Sunday: Closed</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer__col footer__col--nav">
-          <h4 class="footer__heading">Quick Navigation</h4>
-          <ul class="footer__links">
-            <li><a href="about.html"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2.5L9.5 6L6 9.5" stroke="#94A3B8" stroke-width="1"/></svg>Elaf Shariah Advisory</a></li>
-            <li><a href="lexisync.html"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2.5L9.5 6L6 9.5" stroke="#94A3B8" stroke-width="1"/></svg>Elaf LexiSync</a></li>
-            <li><a href="academy.html"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2.5L9.5 6L6 9.5" stroke="#94A3B8" stroke-width="1"/></svg>Elaf Digital Academy</a></li>
-            <li><a href="leadership.html"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2.5L9.5 6L6 9.5" stroke="#94A3B8" stroke-width="1"/></svg>Leadership &amp; Management</a></li>
+        <div class="hero__standard">
+          <p class="hero__standard-label">
+            The Elaf Standard: We deliver institutional solutions that are:
+          </p>
+          <ul class="hero__standard-list">
+            <li>Ethical and strictly Shariah-compliant</li>
+            <li>Commercially viable and profitable</li>
+            <li>Regulator-ready</li>
+            <li>Operationally implementable</li>
           </ul>
         </div>
 
-        <div class="footer__col footer__col--newsletter">
-          <h4 class="footer__heading">Executive Intelligence Briefing</h4>
-          <p class="footer__newsletter-desc">Subscribe for the latest updates on Islamic finance regulations and fintech innovations.</p>
-          <form class="footer__form">
-            <input type="email" placeholder="Enter your email address" class="footer__input">
-            <button type="submit" class="btn btn--primary btn--full">Subscribe</button>
-          </form>
-          <div class="footer__social-section">
-            <h4 class="footer__heading">Follow Us</h4>
-            <div class="footer__social">
-              <a href="#" class="footer__social-link" aria-label="LinkedIn">
-                <img src="images/linkedin.png" alt="LinkedIn">
-              </a>
-              <a href="#" class="footer__social-link" aria-label="Twitter">
-                <img src="images/twitter.png" alt="Twitter">
-              </a>
-              <a href="#" class="footer__social-link" aria-label="Facebook">
-                <img src="images/facebook.png" alt="Facebook">
-              </a>
-            </div>
+        <div class="hero__actions">
+          <a href="#services" class="btn btn--primary btn--lg">
+            Explore Our Divisions
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path
+                d="M8 3.33L12.67 8L8 12.67"
+                stroke="#1A1A1A"
+                stroke-width="1.33"
+              />
+            </svg>
+          </a>
+          <a href="contact.html" class="btn btn--outline-white btn--lg"
+            >Initiate Corporate Inquiry</a
+          >
+        </div>
+
+        <div class="hero__credentials">
+          <div class="hero__credential">
+            <img
+              src="images/check-circle-cred.png"
+              alt=""
+              class="hero__credential-icon"
+            />
+            <span>AAOIFI Certified Leadership</span>
+            <span class="hero__credential-sep">|</span>
+          </div>
+          <div class="hero__credential">
+            <img
+              src="images/check-circle-cred.png"
+              alt=""
+              class="hero__credential-icon"
+            />
+            <span>15+ Years Experience</span>
+            <span class="hero__credential-sep">|</span>
+          </div>
+          <div class="hero__credential">
+            <img
+              src="images/check-circle-cred.png"
+              alt=""
+              class="hero__credential-icon"
+            />
+            <span>200+ Global Clients</span>
+            <span class="hero__credential-sep">|</span>
+          </div>
+          <div class="hero__credential">
+            <img
+              src="images/check-circle-cred.png"
+              alt=""
+              class="hero__credential-icon"
+            />
+            <span>100+ Financial Models Engineered</span>
+            <span class="hero__credential-sep">|</span>
+          </div>
+          <div class="hero__credential">
+            <img
+              src="images/check-circle-cred.png"
+              alt=""
+              class="hero__credential-icon"
+            />
+            <span>4M+ Words Localized</span>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="footer__bottom">
-        <span>&copy; 2026 Elaf Knowledge Systems. All Rights Reserved.</span>
-        <div class="footer__bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms and Conditions</a>
-          <a href="#">Disclaimer</a>
-          <a href="#">FAQs</a>
+    <!-- ===== INDUSTRY DISCONNECT ===== -->
+    <section class="disconnect" id="about">
+      <svg
+        class="disconnect__curve"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1151 203"
+        fill="none"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M841.995 0H309.005C295.165 0 281.655 4.22303 270.279 12.105L169.568 81.8815C152.839 93.4725 132.97 99.6829 112.617 99.6829H0V203H1151V99.6829H1038.38C1018.03 99.6829 998.161 93.4725 981.432 81.8814L880.721 12.105C869.345 4.22302 855.835 0 841.995 0Z"
+          fill="white"
+        />
+      </svg>
+      <div class="disconnect__inner">
+        <h2 class="disconnect__title">
+          Why Institutions Fail in Ethical<br />
+          <span class="text-lime">Finance and Global Expansion.</span>
+        </h2>
+        <p class="disconnect__subtitle">
+          Global organizations are currently facing a modern institutional
+          challenge, often struggling with one of three critical structural
+          gaps:
+        </p>
+
+        <div class="disconnect__cards">
+          <div class="problem-card">
+            <div class="problem-card__num">1</div>
+            <h3 class="problem-card__title">
+              Financial Innovation Without Ethical Compliance
+            </h3>
+            <p class="problem-card__desc">
+              Products that generate revenue but fail Shariah governance,
+              creating massive regulatory exposure.
+            </p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-card__num">2</div>
+            <h3 class="problem-card__title">
+              Technology Expansion Without Cultural Localization
+            </h3>
+            <p class="problem-card__desc">
+              Digital platforms that expand globally without proper linguistic
+              data, ruining native UX.
+            </p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-card__num">3</div>
+            <h3 class="problem-card__title">
+              Knowledge Platforms Without Authentic Scholarship
+            </h3>
+            <p class="problem-card__desc">
+              Educational platforms that lack verified, classical institutional
+              roots.
+            </p>
+          </div>
+        </div>
+
+        <div class="disconnect__quote">
+          <div class="disconnect__quote-inner">
+            <div class="disconnect__quote-left">
+              <span class="disconnect__quote-tag">The Elaf Solution</span>
+              <blockquote class="disconnect__quote-text">
+                "These gaps create investor hesitation, reputational damage, and
+                lost market share. Elaf Knowledge Systems exists to eliminate
+                these risks at the structural level."
+              </blockquote>
+            </div>
+          </div>
+          <span class="disconnect__quote-mark" aria-hidden="true">”</span>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="js/script.js"></script>
-</body>
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services">
+      <img src="images/engineering-bg.png" alt="" class="services__bg" />
+      <div class="services__inner">
+        <div class="services__header">
+          <h2 class="services__title">
+            Strategic Infrastructure Across<br />Three Specialized Divisions.
+          </h2>
+          <p class="services__subtitle">
+            Technology alone cannot build ethical economies. Traditional
+            scholarship alone cannot scale globally. Elaf integrates theology,
+            finance, language technology, and education into one unified
+            operational framework.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          <div class="service-card">
+            <div class="service-card__icon">
+              <img src="images/service-icon-01.png" alt="" />
+            </div>
+            <span class="service-card__num">01</span>
+            <h3 class="service-card__title">Elaf Shariah Advisory</h3>
+            <div class="service-card__body">
+              <p class="service-card__meta">
+                <span class="service-card__label">Target:</span>
+                Islamic Banks, FinTech, SMEs, Startups, NGOs, and Investment
+                Funds worldwide.
+              </p>
+              <p class="service-card__meta">
+                <span class="service-card__label">What We Do:</span>
+                We design Shariah-compliant financial products (Murabaha,
+                Musharaka, Ijarah, Sukuk), Islamic fintech structures, and
+                institutional Shariah Supervisory Boards. We do not provide
+                abstract opinions; we deliver executable financial architecture.
+              </p>
+            </div>
+            <a
+              href="about.html"
+              class="btn btn--outline-accent service-card__cta"
+            >
+              Enter Advisory Division
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M6 4L10 8L6 12" stroke="#E2FF54" stroke-width="1.33" />
+              </svg>
+            </a>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">
+              <img src="images/service-icon-02.png" alt="" />
+            </div>
+            <span class="service-card__num">02</span>
+            <h3 class="service-card__title">Elaf LexiSync</h3>
+            <div class="service-card__body">
+              <p class="service-card__meta">
+                <span class="service-card__label">Target:</span>
+                Silicon Valley Tech Giants, SaaS, App Developers, Global
+                Enterprises, Legal &amp; HR Departments.
+              </p>
+              <p class="service-card__meta">
+                <span class="service-card__label">What We Do:</span>
+                Enterprise localization and linguistic technology. We support
+                global expansion through continuous software localization, AI
+                &amp; MTPE optimization, RTL UI/UX compliance, and secure legal
+                content management across English, Arabic, Urdu, Pashto, and
+                Persian.
+              </p>
+            </div>
+            <a
+              href="lexisync.html"
+              class="btn btn--outline-accent service-card__cta"
+            >
+              Enter Localization Division
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M6 4L10 8L6 12" stroke="#E2FF54" stroke-width="1.33" />
+              </svg>
+            </a>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">
+              <img src="images/service-icon-04.png" alt="" />
+            </div>
+            <span class="service-card__num">03</span>
+            <h3 class="service-card__title">Elaf Digital Academy</h3>
+            <div class="service-card__body">
+              <p class="service-card__meta">
+                <span class="service-card__label">Target:</span>
+                EdTech Platforms, Digital Madaris, Islamic Universities, NGOs,
+                and Global Schools.
+              </p>
+              <p class="service-card__meta">
+                <span class="service-card__label">What We Do:</span>
+                Curriculum architecture and institutional learning systems. We
+                design LMS-optimized Islamic finance programs, structured Arabic
+                &amp; Tajwid curricula, and conduct rigorous academic compliance
+                audits.
+              </p>
+            </div>
+            <a
+              href="academy.html"
+              class="btn btn--outline-accent service-card__cta"
+            >
+              Enter Academy Division
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M6 4L10 8L6 12" stroke="#E2FF54" stroke-width="1.33" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="services__cta-row">
+          <a href="#" class="btn btn--outline-accent services__cta">
+            View All Services
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 4L10 8L6 12" stroke="#E2FF54" stroke-width="1.33" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FRAMEWORK ===== -->
+    <section class="framework" id="framework">
+      <div class="framework__inner">
+        <h2 class="framework__title">Institutional-Grade Advisory Process.</h2>
+        <p class="framework__subtitle">
+          Our engagements follow a rigorously structured phase approach to
+          ensure absolute clarity, regulator readiness, and unwavering investor
+          confidence.
+        </p>
+
+        <div class="framework__grid">
+          <div class="phase-card">
+            <div class="phase-card__circle">1</div>
+            <span class="phase-card__bg-num">01</span>
+            <h3 class="phase-card__title">Diagnostic Review</h3>
+            <p class="phase-card__desc">
+              Comprehensive assessment of your current structures and
+              objectives.
+            </p>
+          </div>
+          <div class="phase-card">
+            <div class="phase-card__circle">2</div>
+            <span class="phase-card__bg-num">02</span>
+            <h3 class="phase-card__title">Gap &amp; Risk Identification</h3>
+            <p class="phase-card__desc">
+              Identifying structural, compliance, and operational gaps.
+            </p>
+          </div>
+          <div class="phase-card">
+            <div class="phase-card__circle">3</div>
+            <span class="phase-card__bg-num">03</span>
+            <h3 class="phase-card__title">Financial Model Development</h3>
+            <p class="phase-card__desc">
+              Engineering the financial model and operational workflow.
+            </p>
+          </div>
+          <div class="phase-card">
+            <div class="phase-card__circle">4</div>
+            <span class="phase-card__bg-num">04</span>
+            <h3 class="phase-card__title">Compliance Structuring</h3>
+            <p class="phase-card__desc">
+              Building regulator-ready frameworks and documentation.
+            </p>
+          </div>
+          <div class="phase-card">
+            <div class="phase-card__circle">5</div>
+            <span class="phase-card__bg-num">05</span>
+            <h3 class="phase-card__title">Implementation Guidance</h3>
+            <p class="phase-card__desc">
+              Guiding your development and operations teams through deployment.
+            </p>
+          </div>
+          <div class="phase-card">
+            <div class="phase-card__circle">6</div>
+            <span class="phase-card__bg-num">06</span>
+            <h3 class="phase-card__title">Governance &amp; Oversight</h3>
+            <p class="phase-card__desc">
+              Continuous board representation and audit oversight.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CLIENTS ===== -->
+    <section class="clients" id="case-studies">
+      <div class="clients__inner">
+        <span class="clients__tag">Trusted By</span>
+        <h2 class="clients__title">200+ Global Clients Across 6 Continents</h2>
+        <p class="clients__subtitle">
+          USA · UK · UAE · KSA · Kuwait · Canada · Australia · Germany · France
+          · MENA Region
+        </p>
+
+        <div class="clients__logos">
+          <span class="client-logo">EQRAZ</span>
+          <span class="client-logo">Musaffa</span>
+          <span class="client-logo">Malco Energy</span>
+          <span class="client-logo">HTC Global</span>
+          <span class="client-logo">Systemrapid</span>
+          <span class="client-logo">Gulf Capital</span>
+          <span class="client-logo">IFinance Corp</span>
+          <span class="client-logo">AlHalal Bank</span>
+          <span class="client-logo">TakaTech</span>
+          <span class="client-logo">ZakatPay</span>
+          <span class="client-logo">GreenSukuk</span>
+          <span class="client-logo">NoorFund</span>
+        </div>
+
+        <div class="clients__cta-row">
+          <a href="academy.html" class="btn btn--case-studies"
+            >View Detailed Case Studies</a
+          >
+        </div>
+
+        <div class="clients__globe">
+          <div class="global-network">
+            <div class="network-ring network-ring--1"></div>
+            <div class="network-ring network-ring--2"></div>
+            <div class="network-ring network-ring--3"></div>
+            <div class="network-core"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="cta-section">
+      <div class="cta-section__inner">
+        <h2 class="cta-section__title">
+          Build Your Financial Strategy on an<br /><span class="text-accent"
+            >Unshakable Foundation.</span
+          >
+        </h2>
+        <p class="cta-section__desc">
+          Partner with globally recognized Shariah experts to structure
+          compliant, commercially viable, and regulator-ready financial
+          solutions.
+        </p>
+        <a
+          href="contact.html"
+          class="btn btn--primary btn--lg btn--case-studies-cta"
+          >Schedule Executive Consultation</a
+        >
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="contact">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__col footer__col--brand">
+            <div class="logo logo--footer">
+              <span class="logo__name logo__name--lg">ELAF</span>
+              <span class="logo__sub">Knowledge Systems</span>
+            </div>
+            <p class="footer__tagline">
+              Bridging Classical Authority with Global Digital Infrastructure.
+            </p>
+            <div class="footer__contact-list">
+              <div class="footer__contact-item">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path
+                    d="M2.33 1.17h9.33v11.67H2.33z"
+                    stroke="#C9A84C"
+                    stroke-width="1.17"
+                  />
+                  <circle
+                    cx="7"
+                    cy="5.25"
+                    r="1.75"
+                    stroke="#C9A84C"
+                    stroke-width="1.17"
+                  />
+                </svg>
+                <div>
+                  <span>Corporate Hub, Wah Cantt / Rawalpindi,</span>
+                  <span>Punjab, Pakistan</span>
+                </div>
+              </div>
+              <div class="footer__contact-item">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <rect
+                    x="1.17"
+                    y="2.33"
+                    width="11.67"
+                    height="9.33"
+                    rx="1"
+                    stroke="#C9A84C"
+                    stroke-width="1.17"
+                  />
+                  <path
+                    d="M1.17 4.08h11.67"
+                    stroke="#C9A84C"
+                    stroke-width="1.17"
+                  />
+                </svg>
+                <span>executive@elafadvisory.com</span>
+              </div>
+              <div class="footer__contact-item">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <circle
+                    cx="7"
+                    cy="7"
+                    r="5.83"
+                    stroke="#C9A84C"
+                    stroke-width="1.17"
+                  />
+                </svg>
+                <span>+92 300-000-0000 (WhatsApp / Direct)</span>
+              </div>
+              <div class="footer__contact-item">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <circle
+                    cx="7"
+                    cy="7"
+                    r="5.83"
+                    stroke="#C9A84C"
+                    stroke-width="1.17"
+                  />
+                  <path
+                    d="M7 3.5V7l2.33 2.33"
+                    stroke="#C9A84C"
+                    stroke-width="1.17"
+                  />
+                </svg>
+                <div>
+                  <span>Mon – Sat: 8:00 AM – 5:00 PM (PKT)</span>
+                  <span>Sunday: Closed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__col footer__col--nav">
+            <h4 class="footer__heading">Quick Navigation</h4>
+            <ul class="footer__links">
+              <li>
+                <a href="about.html"
+                  ><svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path
+                      d="M6 2.5L9.5 6L6 9.5"
+                      stroke="#94A3B8"
+                      stroke-width="1"
+                    /></svg
+                  >Elaf Shariah Advisory</a
+                >
+              </li>
+              <li>
+                <a href="lexisync.html"
+                  ><svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path
+                      d="M6 2.5L9.5 6L6 9.5"
+                      stroke="#94A3B8"
+                      stroke-width="1"
+                    /></svg
+                  >Elaf LexiSync</a
+                >
+              </li>
+              <li>
+                <a href="academy.html"
+                  ><svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path
+                      d="M6 2.5L9.5 6L6 9.5"
+                      stroke="#94A3B8"
+                      stroke-width="1"
+                    /></svg
+                  >Elaf Digital Academy</a
+                >
+              </li>
+              <li>
+                <a href="leadership.html"
+                  ><svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path
+                      d="M6 2.5L9.5 6L6 9.5"
+                      stroke="#94A3B8"
+                      stroke-width="1"
+                    /></svg
+                  >Leadership &amp; Management</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__col footer__col--newsletter">
+            <h4 class="footer__heading">Executive Intelligence Briefing</h4>
+            <p class="footer__newsletter-desc">
+              Subscribe for the latest updates on Islamic finance regulations
+              and fintech innovations.
+            </p>
+            <form class="footer__form">
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                class="footer__input"
+              />
+              <button type="submit" class="btn btn--primary btn--full">
+                Subscribe
+              </button>
+            </form>
+            <div class="footer__social-section">
+              <h4 class="footer__heading">Follow Us</h4>
+              <div class="footer__social">
+                <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                  <img src="images/linkedin.png" alt="LinkedIn" />
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Twitter">
+                  <img src="images/twitter.png" alt="Twitter" />
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                  <img src="images/facebook.png" alt="Facebook" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <span>&copy; 2026 Elaf Knowledge Systems. All Rights Reserved.</span>
+          <div class="footer__bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Disclaimer</a>
+            <a href="#">FAQs</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
