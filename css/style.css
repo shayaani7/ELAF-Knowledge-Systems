@@ -318,7 +318,7 @@ img {
   object-fit: cover;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.55;
+  opacity: 0.25; /* Lowered opacity */
 }
 
 .hero__grid-lines {
@@ -326,11 +326,11 @@ img {
   inset: 0;
   z-index: 3;
   background-image:
-    linear-gradient(to right, rgba(207, 213, 221, 0.14) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(207, 213, 221, 0.14) 1px, transparent 1px);
+    linear-gradient(to right, rgba(207, 213, 221, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(207, 213, 221, 0.05) 1px, transparent 1px);
   background-size: 96px 96px;
   background-position: 0 0;
-  outline: 1px solid rgba(207, 213, 221, 0.14);
+  outline: 1px solid rgba(207, 213, 221, 0.05); /* Lowered opacity */
 }
 
 .hero__cell-glow {
@@ -372,32 +372,27 @@ img {
   align-items: center;
   gap: 10px;
   padding: 8.8px 16.8px;
-  background: var(--border-gold-10);
-  border: 0.8px solid var(--border-gold-30);
+  background: rgba(193, 160, 80, 0.1);
+  border: 1px solid rgba(193, 160, 80, 0.3);
   border-radius: 2px;
   margin-bottom: 25px;
 }
 
 .hero__badge span {
-  color: var(--gold);
+  color: #c1a050; /* Muted Gold */
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   line-height: 16.5px;
-  letter-spacing: 1.65px;
+  letter-spacing: 0.15em;
 }
 
 .hero__title {
   font-size: 48px;
-  font-family:
-    "Montserrat",
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
   font-weight: 800;
   line-height: 59.67px;
+  letter-spacing: -0.02em;
   color: var(--white);
   max-width: 800px;
   margin-bottom: 24px;
@@ -408,16 +403,10 @@ img {
 }
 
 .hero__desc {
-  font-family:
-    "Inter",
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 33.25px;
+  line-height: 1.7;
   color: var(--white);
   max-width: 705px;
   margin-bottom: 48px;
@@ -431,8 +420,34 @@ img {
   flex-wrap: wrap;
 }
 
+/* Institutional Button Overrides for Hero */
+.hero__actions .btn {
+  border-radius: 2px; /* Sharp corners */
+}
+
+.hero__actions .btn--primary {
+  background: #ffffff;
+  color: var(--text-body); /* Dark Teal */
+  border: none;
+}
+
+.hero__actions .btn--primary:hover {
+  background: #f0f0f0;
+  transform: translateY(-1px);
+}
+
+.hero__actions .btn--outline-white {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #e5e4e2; /* Platinum */
+}
+
+.hero__actions .btn--outline-white:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .hero__credentials {
-  border-top: 3px solid var(--accent);
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Thin white line */
   padding-top: 32px;
   padding-bottom: 115px;
   display: flex;
@@ -452,20 +467,22 @@ img {
   height: 14px;
   object-fit: contain;
   flex: 0 0 14px;
+  filter: brightness(0) saturate(100%) invert(83%) sepia(8%) saturate(762%)
+    hue-rotate(359deg) brightness(89%) contrast(88%); /* Muted Gold filter attempt or handled via SVG in HTML */
 }
 
 .hero__credential span:first-of-type {
-  color: var(--text-muted);
-  font-size: 12px;
-  font-weight: 600;
+  color: #e5e4e2; /* Platinum text */
+  font-size: 13px;
+  font-weight: 500;
   line-height: 18px;
   letter-spacing: 0.36px;
 }
 
 .hero__credential-sep {
-  color: var(--gold) !important;
+  color: rgba(255, 255, 255, 0.2) !important;
   font-size: 16px !important;
-  font-weight: 400 !important;
+  font-weight: 300 !important;
   line-height: 24px !important;
   letter-spacing: 0 !important;
   margin: 0 12px;
@@ -473,11 +490,11 @@ img {
 
 .hero__standard {
   margin-top: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 32px;
 }
 
 .hero__standard-label {
-  color: var(--gold);
+  color: #c1a050; /* Muted Gold */
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -501,9 +518,10 @@ img {
 }
 
 .hero__standard-list li::before {
-  content: "\2714";
-  color: var(--gold);
-  font-size: 12px;
+  content: "\2713"; /* Checkmark */
+  color: #c1a050; /* Muted Gold */
+  font-size: 14px;
+  font-weight: bold;
 }
 
 /* ===== INDUSTRY DISCONNECT ===== */
@@ -1005,7 +1023,7 @@ img {
 .clients {
   position: relative;
   z-index: 1;
-  background: var(--white);
+  background: var(--text-body); /* Dark background (deep teal/charcoal) */
   padding: 80px 0 170px;
   text-align: center;
 }
@@ -1018,39 +1036,42 @@ img {
 }
 
 .clients__tag {
-  color: var(--accent);
+  color: #e5e4e2; /* Platinum */
   font-size: 11px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif; /* Inter Semi-Bold */
   font-weight: 600;
   text-transform: uppercase;
   line-height: 16.5px;
-  letter-spacing: 2.2px;
+  letter-spacing: 0.15em; /* Increased spacing */
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 106px;
-  height: 28px;
+  width: auto; /* Allow auto width */
+  padding: 6px 16px; /* Pill padding */
   border-radius: 7px;
-  background: #0d1b2a;
-  margin-bottom: 16px;
+  background: rgba(255, 255, 255, 0.1); /* Subtle white bg instead of black */
+  margin-bottom: 24px; /* Increased margin */
 }
 
 .clients__title {
   font-size: 34px;
-  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
-  font-weight: 800;
+  font-family: "Arvo", serif; /* Bold Slab Serif */
+  font-weight: 700;
+  font-style: normal; /* Upright */
   line-height: 51px;
-  color: var(--dark-card);
-  margin-bottom: 8px;
+  letter-spacing: -0.01em; /* Solid tracking */
+  color: #ffffff; /* Pure White */
+  margin-bottom: 16px; /* Increased space */
 }
 
 .clients__subtitle {
   font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  line-height: 21px;
-  color: var(--text-dark);
-  margin-bottom: 40px;
+  font-family: "Inter", sans-serif; /* Medium Sans */
+  font-weight: 500;
+  line-height: 24px;
+  color: #c0c0c0; /* Silver */
+  margin-bottom: 60px; /* Generous luxury spacing */
+  word-spacing: 4px; /* Space out locations */
 }
 
 .clients__logos {
@@ -1058,7 +1079,7 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
-  margin-bottom: 32px;
+  margin-bottom: 64px; /* Increased luxury spacing before button */
 }
 
 .clients__cta-row {
@@ -1067,21 +1088,51 @@ img {
   margin-bottom: 48px;
 }
 
+/* Institutional-Grade Button Style - Platinum Ghost */
+.btn-platinum {
+  display: inline-block;
+  padding: 16px 40px; /* Generous padding for a luxury feel */
+  font-family: "Inter", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal; /* Ensuring NO italics */
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em; /* "Luxury spacing" */
+  text-decoration: none;
+  color: #e5e4e2; /* Platinum Text */
+  background-color: transparent; /* Transparent Ghost */
+  border: 1.5px solid #e5e4e2; /* Platinum Border */
+  border-radius: 2px; /* Sharp corners for an "Architectural" look */
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-platinum:hover {
+  background-color: #e5e4e2; /* Fills with Platinum */
+  color: #0a1628; /* Text turns to your dark teal background color */
+  box-shadow: 0px 4px 15px rgba(229, 228, 226, 0.2); /* Soft platinum glow */
+}
+
 .client-logo {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 15px 28px;
   background: var(--dark-card);
-  border-radius: 4px;
-  border: 0.8px solid var(--border-gold-15);
-  color: var(--text-secondary);
+  border-radius: 2px; /* Sharp architectural corners */
+  border: 0.5px solid rgba(229, 228, 226, 0.15); /* Faint Platinum border */
+  color: #e5e4e2; /* Platinum text */
   font-size: 13px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 500; /* Medium weight */
   text-transform: uppercase;
   line-height: 19.5px;
   letter-spacing: 1.04px;
+  transition: border-color 0.3s ease;
+}
+
+.client-logo:hover {
+  border-color: #c1a050; /* Matte Gold on hover */
 }
 
 .clients__globe {
@@ -1196,8 +1247,9 @@ img {
 .cta-section {
   position: relative;
   z-index: 2;
-  background: var(--dark-secondary);
-  padding: 45px 0;
+  /* Institutional Deep Palette */
+  background: radial-gradient(circle at center, #0d2b33 0%, #081c22 100%);
+  padding: 80px 0; /* Increased padding */
   border-bottom: 0.8px solid var(--border-gold-15);
   text-align: center;
 }
@@ -1213,13 +1265,14 @@ img {
   width: 697px;
   max-width: 100%;
   flex-shrink: 0;
-  color: #fff;
+  color: #ffffff; /* Pure White */
   text-align: center;
-  font-family: "Rockwell Extra Bold", Rockwell, Georgia, serif;
+  font-family: "Arvo", serif; /* Bold Slab Serif */
   font-size: 32px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 48px; /* 150% */
+  font-style: normal; /* Upright */
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.01em; /* Locked-in spacing */
   margin: 0 auto 16px;
 }
 
@@ -1227,78 +1280,104 @@ img {
   width: 763px;
   max-width: 100%;
   flex-shrink: 0;
-  color: rgba(255, 255, 255, 0.78);
+  color: #e5e4e2; /* Platinum */
   text-align: center;
-  font-family: Montserrat, sans-serif;
-  font-size: 15px;
-  font-style: normal;
+  font-family: "Inter", sans-serif; /* Clean Sans-Serif */
+  font-size: 16px; /* Slightly larger for readability */
+  font-style: normal; /* Upright */
   font-weight: 400;
-  line-height: 25.5px; /* 170% */
-  margin: 0 auto 28px;
+  line-height: 1.7; /* Generous line height */
+  margin: 0 auto 48px; /* Breathable gap */
 }
 
+/* Institutional Matte Gold Button */
 .cta-section .btn--primary {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.7px;
-  padding: 14px 32px;
+  padding: 16px 40px; /* Generous padding */
+  background: #c1a050; /* Matte Gold */
+  color: #0a262e; /* Dark Teal Text */
+  border-radius: 2px; /* Sharp corners */
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.cta-section .btn--primary:hover {
+  background: #d4b86a; /* Lighter Gold on hover */
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(193, 160, 80, 0.3);
 }
 
 /* ===== FOOTER ===== */
 .footer {
-  background: var(--white);
-  border-top: 0.8px solid var(--border-gold-20);
+  /* Institutional Deep Palette */
+  background: #081c22; /* Midnight Forest */
+  border-top: 1px solid rgba(229, 228, 226, 0.1); /* Subtle separation */
+  color: #e5e4e2; /* Platinum Text */
 }
 
 .footer__inner {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 60px 24px 0;
+  padding: 80px 24px 0; /* Increased padding */
 }
 
 .footer__top {
   display: grid;
-  grid-template-columns: 336px 336px 336px;
-  gap: 48px;
-  margin-bottom: 48px;
+  grid-template-columns: 2fr 1fr 1.5fr; /* Adjusted column widths */
+  gap: 60px; /* Generous spacing */
+  margin-bottom: 64px;
 }
 
 .footer__col--brand .logo {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .footer__tagline {
-  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 23.4px;
-  color: #334155;
+  line-height: 1.7;
+  color: #e5e4e2; /* Platinum */
   margin-bottom: 32px;
-  max-width: 243px;
+  max-width: 300px;
 }
 
 .footer__contact-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px; /* Increased gap */
 }
 
 .footer__contact-item {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 12px;
 }
 
 .footer__contact-item svg {
   flex-shrink: 0;
-  margin-top: 3px;
+  margin-top: 5px;
+  color: #c1a050; /* Matte Gold Icons */
+}
+
+/* Ensure SVG paths use current color */
+.footer__contact-item svg path,
+.footer__contact-item svg circle,
+.footer__contact-item svg rect {
+  stroke: currentColor;
 }
 
 .footer__contact-item span,
 .footer__contact-item div {
-  color: #334155;
-  font-size: 13px;
+  color: #e5e4e2; /* Platinum */
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 20.8px;
+  line-height: 1.6;
 }
 
 .footer__contact-item div {
@@ -1307,59 +1386,72 @@ img {
 }
 
 .footer__heading {
-  color: var(--gold);
+  color: #c1a050; /* Matte Gold */
+  font-family: "Inter", sans-serif; /* Bold Sans */
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 16.5px;
-  letter-spacing: 1.65px;
-  margin-bottom: 20px;
+  letter-spacing: 0.15em; /* Luxury Spacing */
+  margin-bottom: 32px; /* Increased margin */
 }
 
 .footer__links {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px; /* Increased gap for 2.0x line feel */
+}
+
+.footer__links li {
+  line-height: 2; /* 2.0x Line Height */
 }
 
 .footer__links a {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #334155;
+  color: #e5e4e2; /* Platinum */
+  font-family: "Inter", sans-serif;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  transition: color 0.2s;
+  font-weight: 400; /* Regular */
+  font-style: normal; /* No Italics */
+  transition: color 0.2s, transform 0.2s;
 }
 
 .footer__links a:hover {
-  color: var(--gold);
+  color: #c1a050; /* Matte Gold Hover */
+  transform: translateX(4px);
+}
+
+/* Hide the little arrows in links if desired, or color them gold */
+.footer__links a svg {
+  display: none; /* Cleaner look for institutional */
 }
 
 .footer__newsletter-desc {
-  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 22.1px;
-  color: #334155;
-  margin-bottom: 16px;
+  line-height: 1.6;
+  color: #e5e4e2; /* Platinum */
+  margin-bottom: 24px;
 }
 
 .footer__form {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-bottom: 24px;
+  gap: 16px;
+  margin-bottom: 32px;
 }
 
 .footer__input {
   width: 100%;
-  padding: 12px 16px;
-  background: var(--dark-secondary);
-  border: 0.8px solid var(--border-gold-25);
-  border-radius: 4px;
-  color: var(--text-light);
-  font-size: 13px;
+  padding: 14px 16px;
+  background: #0a1628; /* Dark Navy/Black Box */
+  border: 1px solid rgba(229, 228, 226, 0.3); /* Platinum Border */
+  border-radius: 2px; /* Sharp corners */
+  color: #ffffff;
+  font-size: 14px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   outline: none;
@@ -1367,80 +1459,111 @@ img {
 }
 
 .footer__input::placeholder {
-  color: rgba(226, 232, 240, 0.5);
+  color: rgba(229, 228, 226, 0.5);
 }
 
 .footer__input:focus {
-  border-color: var(--gold);
+  border-color: #c1a050; /* Matte Gold Focus */
+}
+
+/* Institutional Subscribe Button */
+.footer__form .btn--primary {
+  width: 100%;
+  padding: 14px 0;
+  background: #c1a050; /* Matte Gold */
+  color: #081c22; /* Midnight Background Text */
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 2px; /* Sharp corners */
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer__form .btn--primary:hover {
+  background: #d4b86a;
+  box-shadow: 0 4px 12px rgba(193, 160, 80, 0.2);
 }
 
 .footer__social-section {
-  margin-top: 20px;
+  margin-top: 32px;
 }
 
 .footer__social-section .footer__heading {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .footer__social {
   display: flex;
-  gap: 12px;
+  gap: 16px;
 }
 
 .footer__social-link {
-  width: 36px;
-  height: 36px;
-  border-radius: 18px;
-  border: 0.8px solid var(--border-gold-30);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(229, 228, 226, 0.3); /* Platinum Border */
   display: flex;
   align-items: center;
   justify-content: center;
-  transition:
-    background 0.2s,
-    border-color 0.2s;
+  transition: all 0.3s ease;
+  background: transparent;
 }
 
 .footer__social-link:hover {
-  background: var(--border-gold-10);
-  border-color: var(--gold);
+  background: #c1a050; /* Matte Gold Fill */
+  border-color: #c1a050;
+  transform: translateY(-2px);
 }
 
+/* Filter icons to white, then black on hover */
 .footer__social-link img {
-  width: 16px;
-  height: 16px;
-  opacity: 0.6;
+  width: 18px;
+  height: 18px;
+  opacity: 1;
+  filter: brightness(0) invert(1); /* Pure White Icons */
+  transition: filter 0.3s ease;
+}
+
+.footer__social-link:hover img {
+  filter: brightness(0); /* Black Icons on Gold */
 }
 
 .footer__bottom {
-  border-top: 0.8px solid var(--border-gold-10);
-  padding: 24px 0;
+  border-top: 1px solid rgba(229, 228, 226, 0.1); /* Thin divider */
+  padding: 32px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 .footer__bottom span {
-  color: var(--text-dark);
+  color: #8e9fa3; /* Slate Grey */
+  font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.5;
 }
 
 .footer__bottom-links {
   display: flex;
-  gap: 20px;
+  gap: 32px;
 }
 
 .footer__bottom-links a {
-  color: var(--text-dark);
+  color: #8e9fa3; /* Slate Grey */
+  font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.5;
   transition: color 0.2s;
 }
 
 .footer__bottom-links a:hover {
-  color: var(--gold);
+  color: #e5e4e2; /* Platinum Hover */
 }
 
 /* ===== RESPONSIVE ===== */
