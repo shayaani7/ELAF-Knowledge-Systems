@@ -389,7 +389,13 @@ img {
 
 .hero__title {
   font-size: 48px;
-  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
+  font-family:
+    "Montserrat",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-weight: 800;
   line-height: 59.67px;
   color: var(--white);
@@ -531,7 +537,13 @@ img {
 
 .disconnect__title {
   font-size: 37.55px;
-  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-weight: 800;
   line-height: 48px;
   color: #0a1628;
@@ -573,24 +585,47 @@ img {
 }
 
 .problem-card__num {
-  width: 32px;
-  height: 32px;
-  background: var(--accent);
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #8b6914;
-  font-size: 14px;
-  font-family: "Playfair Display", serif;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: transparent;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  color: #0a1628;
+  font-size: 12px;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 18px;
+  letter-spacing: 0.8px;
   margin-bottom: 16px;
+}
+.problem-card__num::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--teal);
+  margin-bottom: 6px;
 }
 
 .problem-card__title {
   font-size: 14px;
-  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-weight: 800;
   line-height: 25.5px;
   color: var(--text-body);
@@ -640,18 +675,18 @@ img {
   font-weight: 600;
   text-transform: uppercase;
   line-height: 15px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   display: block;
   margin-bottom: 12px;
 }
 
 .disconnect__quote-text {
-  color: #e2e8f0;
+  color: #e0e0e0;
   font-size: 22px;
   font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-weight: 500;
-  line-height: 37.4px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
   max-width: 693px;
 }
 
@@ -843,8 +878,8 @@ img {
 
 .framework__title {
   font-size: 40.82px;
-  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
-  font-weight: 800;
+  font-family: "Rockwell Extra Bold", "Rockwell", "Georgia", serif;
+  font-weight: 900;
   line-height: 61.24px;
   color: var(--text-body);
   text-align: center;
@@ -907,8 +942,14 @@ img {
 
 .phase-card__title {
   font-size: 17px;
-  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
-  font-weight: 800;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-weight: 700;
   line-height: 25.5px;
   color: var(--text-light);
   margin-bottom: 10px;
@@ -1149,7 +1190,7 @@ img {
   width: 763px;
   max-width: 100%;
   flex-shrink: 0;
-  color: #94a3b8;
+  color: rgba(255, 255, 255, 0.78);
   text-align: center;
   font-family: Montserrat, sans-serif;
   font-size: 15px;
@@ -1193,7 +1234,7 @@ img {
   font-size: 13px;
   font-weight: 400;
   line-height: 23.4px;
-  color: var(--text-dim);
+  color: #334155;
   margin-bottom: 32px;
   max-width: 243px;
 }
@@ -1217,7 +1258,7 @@ img {
 
 .footer__contact-item span,
 .footer__contact-item div {
-  color: var(--text-secondary);
+  color: #334155;
   font-size: 13px;
   font-weight: 400;
   line-height: 20.8px;
@@ -1248,7 +1289,7 @@ img {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--text-secondary);
+  color: #334155;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -1263,7 +1304,7 @@ img {
   font-size: 13px;
   font-weight: 400;
   line-height: 22.1px;
-  color: var(--text-dim);
+  color: #334155;
   margin-bottom: 16px;
 }
 
@@ -1574,7 +1615,7 @@ img {
   margin-bottom: 18px;
 }
 .about-hero__target {
-  color: var(--text-secondary);
+  color: var(--text-muted);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.3px;
@@ -1612,7 +1653,13 @@ img {
 .about-hero__title {
   max-width: 985px;
   font-size: 48px;
-  font-family: "Rockwell Extra Bold", "Rockwell", "Georgia", serif;
+  font-family:
+    "Montserrat",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-weight: 800;
   line-height: 52px;
   color: #fff;
@@ -1663,14 +1710,10 @@ img {
   margin-bottom: 24px;
 }
 .about-theology__highlight {
-  display: inline-block;
-  white-space: nowrap;
-  background: #e2ff54;
-  color: #0a1628;
-  padding: 2px 8px 4px 8px;
-  border-radius: 4px;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
 }
 .about-theology__p {
   color: #475569;
@@ -1854,23 +1897,35 @@ img {
 }
 /* Right column */
 .about-profile__quote {
-  font-family: "Playfair Display", serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 15px;
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
   line-height: 26px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.9);
   margin: 0 0 28px;
   padding: 0;
   border: none;
 }
 .about-profile__bio {
-  font-family: "Playfair Display", serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 15px;
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
   line-height: 26px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.82);
   margin-bottom: 32px;
 }
 .about-profile__creds {
@@ -1931,7 +1986,7 @@ img {
   margin-bottom: 16px;
 }
 .about-board__intro {
-  color: #64748b;
+  color: rgba(255, 255, 255, 0.9);
   text-align: center;
   font-family:
     "Inter",
@@ -2005,7 +2060,7 @@ img {
 
 /* Card text: first desc line = qualifications, second = main paragraph */
 .about-board__card p.about-board__desc:nth-of-type(2) {
-  color: #94a3b8;
+  color: rgba(255, 255, 255, 0.82);
   font-family:
     "Inter",
     system-ui,
@@ -2014,13 +2069,13 @@ img {
     "Segoe UI",
     sans-serif;
   font-size: 13px;
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
   line-height: 20.8px;
   margin: 0 0 14px;
 }
 .about-board__card p.about-board__desc:nth-of-type(3) {
-  color: #64748b;
+  color: rgba(255, 255, 255, 0.72);
   font-family:
     "Inter",
     system-ui,
@@ -2077,9 +2132,15 @@ img {
 }
 .about-testimonial__quote {
   color: #334155;
-  font-family: "Playfair Display", serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 16px;
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
   line-height: 28.8px;
   margin: 18px 0 18px;
@@ -2140,10 +2201,8 @@ img {
   margin-bottom: 28px;
 }
 .about-partner__highlight {
-  display: inline-block;
-  background: #e2ff54;
-  border-radius: 0;
-  padding: 0 10px;
+  background: transparent;
+  padding: 0;
 }
 .about-partner__btn {
   background: var(--dark-card);
@@ -2297,7 +2356,13 @@ img {
   width: 825.866px;
   max-width: 100%;
   color: #fff;
-  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
+  font-family:
+    "Montserrat",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 44.008px;
   font-style: normal;
   font-weight: 800;
@@ -2368,6 +2433,9 @@ img {
   align-items: center;
   justify-content: center;
 }
+.lexi-service-card__icon svg * {
+  stroke: rgba(255, 255, 255, 0.75);
+}
 .lexi-service-card__content {
   flex: 1;
   min-width: 0;
@@ -2380,7 +2448,7 @@ img {
   min-width: 0;
 }
 .lexi-service-card__num {
-  color: #475569;
+  color: rgba(255, 255, 255, 0.7);
   font-family: "Inter", system-ui, sans-serif;
   font-size: 10px;
   font-style: normal;
@@ -2393,7 +2461,7 @@ img {
   content: " · ";
 }
 .lexi-service-card__tag {
-  color: #475569;
+  color: rgba(255, 255, 255, 0.7);
   font-family: "Inter", system-ui, sans-serif;
   font-size: 10px;
   font-style: normal;
@@ -2407,10 +2475,16 @@ img {
 }
 .lexi-service-card__title {
   color: #cbd5e1;
-  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
+  font-family:
+    "Montserrat",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 21px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 31.5px;
   margin: 0;
 }
@@ -3120,7 +3194,13 @@ img {
 }
 .leadership-hero__title {
   color: #fff;
-  font-family: "Rockwell Extra Bold", Rockwell, Georgia, serif;
+  font-family:
+    "Montserrat",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 52.488px;
   font-style: normal;
   font-weight: 800;
@@ -3131,7 +3211,7 @@ img {
   color: #e2ff54;
 }
 .leadership-hero__desc {
-  color: #94a3b8;
+  color: rgba(255, 255, 255, 0.78);
   font-family: Inter, system-ui, sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -3302,7 +3382,7 @@ img {
   margin-bottom: 0;
 }
 .ask-form__desc {
-  color: #64748b;
+  color: rgba(255, 255, 255, 0.78);
   font-family: Inter, system-ui, sans-serif;
   font-size: 14.769px;
   font-style: normal;
@@ -3328,7 +3408,7 @@ img {
   gap: 8px;
 }
 .ask-form__label {
-  color: #94a3b8;
+  color: rgba(255, 255, 255, 0.86);
   font-family: Inter, system-ui, sans-serif;
   font-size: 11.816px;
   font-style: normal;
@@ -3398,7 +3478,7 @@ img {
   gap: 24px;
 }
 .ask-form__disclaimer {
-  color: #475569;
+  color: rgba(255, 255, 255, 0.72);
   font-family: Inter, system-ui, sans-serif;
   font-size: 11.816px;
   font-style: normal;
@@ -3549,7 +3629,13 @@ img {
 }
 .academy-hero__title {
   color: #fff;
-  font-family: "Rockwell Extra Bold", Rockwell, Georgia, serif;
+  font-family:
+    "Montserrat",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 32.67px;
   font-style: normal;
   font-weight: 800;
@@ -3571,7 +3657,7 @@ img {
   line-height: 37.571px;
 }
 .academy-hero__desc {
-  color: #94a3b8;
+  color: rgba(255, 255, 255, 0.78);
   font-family: Montserrat, sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -3608,7 +3694,7 @@ img {
 }
 .academy-stats__label {
   display: block;
-  color: #475569;
+  color: rgba(255, 255, 255, 0.72);
   text-align: center;
   font-family: Inter, sans-serif;
   font-size: 12px;
@@ -3692,7 +3778,7 @@ img {
   border: 1px solid rgba(148, 163, 184, 0.25);
   border-radius: 4px;
   background: rgba(7, 14, 26, 0.6);
-  color: #64748b;
+  color: rgba(255, 255, 255, 0.78);
   font-family: Inter, sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -3905,10 +3991,9 @@ img {
   line-height: 44px; /* 187.183% */
 }
 .academy-ready__title-second {
-  display: inline-block;
-  padding: 4px 14px 6px;
-  border-radius: 14px;
-  background: #e2ff54;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
   color: #0a1628;
   font-family: "Rockwell Extra Bold", Rockwell, Georgia, serif;
   font-size: 36px;
