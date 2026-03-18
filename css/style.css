@@ -704,11 +704,17 @@ img {
 }
 
 /* ===== SERVICES ===== */
+/* ===== SERVICES ===== */
 .services {
   position: relative;
   background: var(--text-body);
   padding: 66px 0 80px;
   overflow: hidden;
+
+  /* Institutional Palette Overrides */
+  --platinum: #e5e4e2;
+  --silver: #c0c0c0;
+  --platinum-light: #d9d9d9;
 }
 
 .services__bg {
@@ -736,9 +742,10 @@ img {
 
 .services__title {
   font-size: 40.82px;
-  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
-  font-weight: 800;
+  font-family: "Arvo", serif;
+  font-weight: 700;
   line-height: 61.24px;
+  letter-spacing: 0.04em;
   color: var(--white);
   margin-bottom: 16px;
 }
@@ -747,9 +754,9 @@ img {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  line-height: 24px;
-  color: #94a3b8;
-  max-width: 611px;
+  line-height: 25.6px;
+  color: #d1d1d1;
+  max-width: 650px;
   margin: 0 auto;
 }
 
@@ -767,32 +774,42 @@ img {
   height: 585px;
   flex-shrink: 0;
   flex-direction: column;
-  background: var(--dark-card);
+  background: #132435; /* Is slightly lighter than #0a1628 (~5% lightness increase) */
   border-radius: 6px;
-  border: 0.8px solid rgba(201, 168, 76, 0.12);
+  border: 1px solid rgba(229, 228, 226, 0.12); /* Platinum border hint */
   padding: 32px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .service-card__icon {
   width: 48px;
   height: 48px;
-  background: rgba(201, 168, 76, 0.08);
-  border: 0.8px solid var(--border-gold-20);
+  /* Glassmorphism: 10% opacity white bg + silver border */
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #c0c0c0; /* Silver border */
   border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  backdrop-filter: blur(4px);
 }
 
 .service-card__icon img {
   width: 22px;
   height: 22px;
+  filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(175%)
+    hue-rotate(188deg) brightness(98%) contrast(85%); /* Makes icon white/platinum */
 }
 
 .service-card__num {
   display: block;
-  color: var(--accent);
+  color: #e5e4e2; /* Platinum */
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -803,11 +820,12 @@ img {
 
 .service-card__title {
   font-size: 15px;
-  font-family: "Rockwell Extra Bold", "Rockwell", "Georgia", serif;
-  font-weight: 800;
+  font-family: "Arvo", serif; /* Bold Slab Serif */
+  font-weight: 800; /* Bold */
   line-height: 23.4px;
-  color: #e2e8f0;
+  color: var(--white); /* Crisp White */
   margin-bottom: 24px;
+  letter-spacing: 0.02em;
 }
 
 .service-card__body {
@@ -819,17 +837,21 @@ img {
 
 .service-card__meta {
   font-size: 13px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  line-height: 23.8px;
-  color: #d9d9d9;
+  font-family: "Montserrat", sans-serif; /* Clean Sans Serif */
+  font-weight: 400; /* Regular */
+  font-style: normal; /* Upright / No Italics */
+  line-height: 1.6; /* Increased line height */
+  color: #e5e4e2; /* Platinum for description */
   margin: 0;
 }
 
 .service-card__label {
   display: block;
   margin-bottom: 6px;
-  color: var(--text-light);
+  font-size: 11px; /* Smaller font size */
+  text-transform: uppercase; /* All Caps */
+  letter-spacing: 1px; /* Increased letter spacing */
+  color: #c0c0c0; /* Silver for labels */
   font-weight: 700;
 }
 
@@ -839,7 +861,15 @@ img {
   align-self: center;
   margin-top: 32px;
   padding: 12px 24px;
-  border-width: 1.5px;
+  border-width: 1px; /* Thin border */
+  border-color: #e5e4e2 !important; /* Platinum border */
+  color: #e5e4e2 !important;
+}
+
+.service-card__cta:hover {
+  background: #2e3e4a !important; /* Muted brand color (charcoal/dark teal) */
+  border-color: #2e3e4a !important;
+  color: var(--white) !important;
 }
 
 .services__cta-row {
@@ -860,6 +890,17 @@ img {
   width: fit-content;
   flex: 0 0 auto;
   box-sizing: border-box;
+
+  /* Institutional Style Override */
+  border: 1px solid #e5e4e2 !important; /* Platinum border */
+  color: #e5e4e2 !important;
+  transition: all 0.3s ease;
+}
+
+.services__cta:hover {
+  background: #2e3e4a !important; /* Muted brand color */
+  border-color: #2e3e4a !important;
+  color: var(--white) !important;
 }
 
 /* ===== FRAMEWORK ===== */
@@ -900,7 +941,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
-  background: var(--border-gold-10);
+  background: rgba(229, 228, 226, 0.1); /* Platinum grid lines */
   border-radius: 6px;
   overflow: hidden;
   margin-bottom: 80px;
@@ -917,12 +958,13 @@ img {
   width: 36px;
   height: 36px;
   border-radius: 18px;
-  border: 1.6px solid var(--accent);
+  border: 1px solid #e5e4e2; /* Platinum border (Ghost Circle) */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent);
+  color: #ffffff; /* White number */
   font-size: 12px;
+  font-family: "Inter", sans-serif; /* Bold Sans-Serif */
   font-weight: 700;
   line-height: 18px;
   margin-bottom: 16px;
@@ -932,9 +974,9 @@ img {
   position: absolute;
   right: 16px;
   top: 16px;
-  color: var(--border-gold-10);
+  color: rgba(229, 228, 226, 0.15); /* Platinum 15% opacity */
   font-size: 48px;
-  font-family: "Playfair Display", serif;
+  font-family: "Arvo", serif; /* Consistent layout font */
   font-weight: 700;
   line-height: 48px;
   pointer-events: none;
@@ -942,25 +984,20 @@ img {
 
 .phase-card__title {
   font-size: 17px;
-  font-family:
-    "Inter",
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
+  font-family: "Arvo", serif; /* Bold Slab Serif */
   font-weight: 700;
   line-height: 25.5px;
-  color: var(--text-light);
+  color: var(--white);
   margin-bottom: 10px;
 }
 
 .phase-card__desc {
   font-size: 13px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  line-height: 22.1px;
-  color: var(--text-dim);
+  font-weight: 400; /* Regular */
+  font-style: normal; /* No Italics */
+  line-height: 1.6; /* Increased line height */
+  color: #e5e4e2; /* Platinum */
   max-width: 257px;
 }
 
