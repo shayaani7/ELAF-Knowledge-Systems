@@ -4115,7 +4115,13 @@ img {
 .academy-programs__heading {
   color: #fff;
   text-align: center;
-  font-family: "Rockwell Extra Bold", Rockwell, Georgia, serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 800;
@@ -4231,7 +4237,13 @@ img {
 }
 .academy-card__title {
   color: #fff;
-  font-family: "Rockwell Extra Bold", Rockwell, Georgia, serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
@@ -4298,7 +4310,13 @@ img {
 }
 .academy-ready__title-first {
   color: #0a1628;
-  font-family: "Rockwell Extra Bold", Rockwell, Georgia, serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 23.506px;
   font-style: normal;
   font-weight: 800;
@@ -4309,7 +4327,13 @@ img {
   padding: 0;
   border-radius: 0;
   color: #0a1628;
-  font-family: "Rockwell Extra Bold", Rockwell, Georgia, serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 800;
