@@ -1024,7 +1024,7 @@ img {
   position: relative;
   z-index: 1;
   background: var(--text-body); /* Dark background (deep teal/charcoal) */
-  padding: 80px 0 170px;
+  padding: 80px 0 60px;
   text-align: center;
 }
 
@@ -1135,19 +1135,131 @@ img {
   border-color: #c1a050; /* Matte Gold on hover */
 }
 
-.clients__globe {
-  position: absolute;
-  right: 130px;
-  bottom: -420px;
-  width: 352px;
-  height: 352px;
-  z-index: 1;
-  pointer-events: none;
-  perspective: 1200px;
+/* ===== CASE STUDIES ===== */
+.case-studies {
+  background: var(--dark-primary); /* Deep background */
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
 }
 
-.global-network {
+.case-studies__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.case-study-card {
+  display: grid;
+  grid-template-columns: 280px 1fr 280px; /* Architectural Grid */
+  gap: 40px; /* Spacious Gutters */
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.02); /* Very subtle card bg */
+  border: 1px solid rgba(229, 228, 226, 0.1); /* Faint Platinum border */
+  border-radius: 2px; /* Sharp corners */
+  padding: 40px;
+}
+
+.case-study__col {
+  display: flex;
+  flex-direction: column;
+}
+
+.case-study__label {
+  color: #c1a050; /* Matte Gold Header */
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 800; /* Extra Bold */
+  text-transform: uppercase;
+  letter-spacing: 0.15em; /* Blueprint Label Spacing */
+  margin-bottom: 16px;
+}
+
+.case-study__title {
+  color: #ffffff; /* Pure White */
+  font-family: "Arvo", serif; /* Bold Slab */
+  font-weight: 700;
+  font-style: normal; /* Upright */
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.01em; /* Dense Authority */
+  margin-bottom: 24px;
+}
+
+.case-study__desc {
+  color: #e5e4e2; /* Platinum Body */
+  font-family: "Inter", sans-serif; /* Regular Sans */
+  font-weight: 400;
+  font-style: normal; /* No Italics */
+  font-size: 14px;
+  line-height: 1.8; /* Accessible Premium Line Height */
+}
+
+.case-study__tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: auto; /* Push to bottom */
+  padding-top: 24px;
+}
+
+.case-study__tag {
+  border: 1px solid rgba(229, 228, 226, 0.2); /* Platinum Ghost Border */
+  color: #e5e4e2; /* Platinum Text */
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 4px 10px;
+  border-radius: 2px; /* Sharp corners */
+}
+
+/* Institutional Impact Box */
+.impact-box {
+  background-color: #0d2b33; /* Deep Slate Teal */
+  border-top: 3px solid #c1a050; /* Matte Gold Certification Bar */
+  padding: 24px;
+  border-radius: 2px; /* Sharp corners */
+  transition: transform 0.3s ease;
   position: relative;
+  height: 100%; /* Fill column height */
+}
+
+.impact-box:hover {
+  transform: translateY(-4px);
+  background-color: #0f353d; /* Slight brighten */
+}
+
+.impact-title {
+  display: block;
+  color: #c1a050; /* Matte Gold */
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em; /* Luxury Spacing */
+  margin-bottom: 16px;
+}
+
+.impact-stat {
+  display: block;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.impact-context {
+  display: block;
+  color: #8e9fa3; /* Muted Slate Grey */
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  margin-top: 8px;
+}
   width: 100%;
   height: 100%;
   display: flex;
