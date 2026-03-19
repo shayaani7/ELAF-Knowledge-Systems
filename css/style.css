@@ -2380,7 +2380,13 @@ img {
 }
 .about-testimonials__title {
   font-size: 34px;
-  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-weight: 800;
   color: var(--dark-primary);
   margin-bottom: 48px;
@@ -2471,7 +2477,13 @@ img {
 .about-partner__title {
   color: #0a1628;
   text-align: center;
-  font-family: "Rockwell", "Rockwell Extra Bold", "Georgia", serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 34px;
   font-style: normal;
   font-weight: 800;
